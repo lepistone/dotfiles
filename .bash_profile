@@ -54,12 +54,3 @@ alias xack="ack --type=xml"
 alias b='bzr'
 alias git='hub'
 alias g='hub'
-
-function checkall {
-    git checkout $1
-    for dir in server addons web
-    do cd $dir
-    git checkout $1
-    cd ..
-    done;
-}
