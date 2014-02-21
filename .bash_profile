@@ -1,4 +1,5 @@
 # non interactive? exit now.
+
 if [ -z "$PS1" ]; then
    return
 fi
@@ -7,6 +8,7 @@ fi
 . ~/dotfiles/profile.d/completion.sh
 . ~/dotfiles/profile.d/prompt.sh
 . ~/dotfiles/profile.d/aliases.sh
+. ~/dotfiles/profile.d/exports.sh
 
 test -r ~/.profile.private && source ~/.profile.private
 
@@ -21,9 +23,4 @@ fortune
 if [ "$(uname)" == "Darwin" ]; then
 	alias ls='ls -pG'
 #	export PGDATA=/usr/local/var/postgres
-else
-	# not used to -i
-	unalias rm
-	unalias cp
-	unalias mv
 fi
