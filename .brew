@@ -1,0 +1,39 @@
+#!/bin/bash
+
+brew tap phinze/homebrew-cask
+
+brew update
+
+brew install ack
+brew install bash
+brew install bash-completion
+brew install bazaar
+brew install fontconfig
+brew install fortune
+brew install hub
+brew install jython
+brew install lftp
+brew install mercurial
+brew install node
+brew install pass
+brew install pstree
+brew install pypy
+brew install pyqt
+brew install python
+brew install python3
+brew install python32
+brew install rabbitmq
+brew install ruby
+brew install vim
+brew install wget
+brew install wrk-trello
+brew install youtube-dl
+
+brew install brew-cask
+
+brew cask install coconutbattery
+brew cask install firefox
+brew cask install evernote
+brew cask install gitx-l
+brew cask install coconutbattery
+brew cask install google-drive
