@@ -22,5 +22,5 @@ fortune
 
 if [ "$(uname)" == "Darwin" ]; then
 	alias ls='ls -pG'
-#	export PGDATA=/usr/local/var/postgres
+	export PGDATA=/usr/local/var/postgres
 fi
