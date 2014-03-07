@@ -15,3 +15,5 @@ alias xack="ack --type=xml"
 alias b='bzr'
 alias git='hub'
 alias g='hub'
+
+alias bzr-config='vi .bzr/branch/branch.conf'
