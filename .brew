@@ -24,7 +24,7 @@ brew install python3
 brew install python32
 brew install rabbitmq
 brew install ruby
-brew install vim
+brew install vim --override-system-vim --with-python3
 brew install wget
 brew install wrk-trello
 brew install youtube-dl
