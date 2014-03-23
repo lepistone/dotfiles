@@ -13,7 +13,7 @@ alias pack="ack --type=python"
 alias xack="ack --type=xml"
 
 alias b='bzr'
-alias git='hub'
+# I don't alias git=hub because that slows dows the git prompt. I can alias g though
 alias g='hub'
 
 alias bzr-config='vi .bzr/branch/branch.conf'
