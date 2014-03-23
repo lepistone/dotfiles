@@ -35,5 +35,4 @@ brew cask install coconutbattery
 brew cask install firefox
 brew cask install evernote
 brew cask install gitx-l
-brew cask install coconutbattery
 brew cask install google-drive
