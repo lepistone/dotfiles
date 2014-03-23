@@ -49,4 +49,4 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /home/lpistone/.gitignore_global
+	excludesfile = ~/.gitignore_global
