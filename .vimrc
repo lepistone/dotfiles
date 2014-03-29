@@ -15,6 +15,7 @@ set laststatus=2
 set showtabline=2
 set winwidth=79
 set mouse=a
+set showcmd
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
