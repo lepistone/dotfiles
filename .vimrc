@@ -9,7 +9,11 @@ set hlsearch
 set history=1000
 set ignorecase smartcase
 set ruler
+
 set expandtab
+set autoindent
+autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set sw=2 sts=2
+
 set cursorline
 set laststatus=2
 set showtabline=2
