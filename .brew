@@ -8,6 +8,7 @@ brew install ack
 brew install bash
 brew install bash-completion
 brew install bazaar
+brew install cowsay
 brew install fontconfig
 brew install fortune
 brew install hub
