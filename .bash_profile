@@ -18,7 +18,7 @@ shopt -s extglob
 shopt -s histappend
 shopt -s nocaseglob
 
-fortune
+fortune | cowsay
 
 if [ "$(uname)" == "Darwin" ]; then
 	alias ls='ls -pG'
