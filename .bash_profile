@@ -24,3 +24,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	alias ls='ls -pG'
 	export PGDATA=/usr/local/var/postgres
 fi
+
+if [ "$(uname)" == "Linux" ]; then
+        alias xclip="xclip -selection c"
+fi
