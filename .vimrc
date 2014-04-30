@@ -20,6 +20,7 @@ set cursorline
 set laststatus=2
 set showtabline=2
 set winwidth=79
+set colorcolumn=80
 set mouse=a
 set showcmd
 
