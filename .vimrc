@@ -28,6 +28,10 @@ set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+" interim 256-color solarized because I have trouble setting the solarized
+" 16-color palette in the gnome terminal
+set t_Co=256
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
