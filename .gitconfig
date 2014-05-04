@@ -45,6 +45,7 @@
 
 [merge]
     tool = vimdiff
+	defaultToUpstream = true
 
 [push]
 	default = simple
