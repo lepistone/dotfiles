@@ -37,3 +37,4 @@ brew cask install firefox
 brew cask install evernote
 brew cask install gitx-l
 brew cask install google-drive
+brew cask install pgadmin3
