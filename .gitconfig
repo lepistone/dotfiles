@@ -51,3 +51,7 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore_global
+[pretty]
+        # this looks similar to gary bernhardt's magic, without external
+        # magic.
+	onelep = %h %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
