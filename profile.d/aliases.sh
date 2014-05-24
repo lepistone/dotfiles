@@ -15,5 +15,7 @@ alias xack="ack --type=xml"
 alias b='bzr'
 # I don't alias git=hub because that slows dows the git prompt. I can alias g though
 alias g='hub'
+# and make bash completion work for "g"
+__git_complete g __git_main
 
 alias bzr-config='vi .bzr/branch/branch.conf'
