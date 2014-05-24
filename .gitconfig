@@ -20,5 +20,7 @@
 	excludesfile = ~/.gitignore_global
 [pretty]
         # this looks similar to gary bernhardt's magic, without external
-        # magic.
-	onelep = %h %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
+	# magic.
+	# I add a tab at the beginning to prevent the graph to break column
+	# alignment. That could be considered a bug in git.
+	onelep = %x09%h %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
