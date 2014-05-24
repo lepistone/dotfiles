@@ -1,1 +1,1 @@
-export LESS=-Rq
+export LESS=-FXRSq
