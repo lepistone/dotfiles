@@ -1,7 +1,16 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
-syntax on
+" interim 256-color solarized because I have trouble setting the solarized
+" 16-color palette in the gnome terminal
+set t_Co=16
+" set t_Co=256
+" let g:solarized_termcolors=256
+
+syntax enable
+set background=dark
+colorscheme solarized
+
 filetype plugin indent on
 
 set incsearch
@@ -25,12 +34,5 @@ set showcmd
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-
-" interim 256-color solarized because I have trouble setting the solarized
-" 16-color palette in the gnome terminal
-set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
 
 let mapleader=","
