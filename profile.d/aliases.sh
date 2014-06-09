@@ -19,3 +19,4 @@ alias g='hub'
 __git_complete g __git_main
 
 alias bzr-config='vi .bzr/branch/branch.conf'
+alias ls='ls --color'
