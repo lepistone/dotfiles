@@ -38,3 +38,5 @@ brew cask install evernote
 brew cask install gitx-l
 brew cask install google-drive
 brew cask install pgadmin3
+brew cask install virtualbox
+brew cask install vagrant
