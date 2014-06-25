@@ -32,6 +32,7 @@ brew install youtube-dl
 
 brew install brew-cask
 
+brew cask install basictex
 brew cask install coconutbattery
 brew cask install firefox
 brew cask install evernote
