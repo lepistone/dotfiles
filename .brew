@@ -35,6 +35,7 @@ brew install brew-cask
 brew cask install basictex
 brew cask install coconutbattery
 brew cask install calibre
+brew cask install dropbox
 brew cask install firefox
 brew cask install evernote
 brew cask install gitx-l
