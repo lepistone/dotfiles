@@ -25,6 +25,7 @@ set autoindent
 autocmd FileType ruby,haml,eruby,yaml,html,xml,javascript,sass,cucumber,java set sw=2 sts=2
 
 set cursorline
+set scrolloff=3
 set laststatus=2
 set showtabline=2
 set winwidth=79
