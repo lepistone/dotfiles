@@ -6,6 +6,7 @@ execute pathogen#infect()
 set t_Co=16
 " set t_Co=256
 " let g:solarized_termcolors=256
+let g:solarized_visibility="low" " used if I enable :set list
 
 syntax enable
 set background=dark
@@ -32,6 +33,7 @@ set mouse=a
 set ttymouse=xterm2  " enable dragging inside tmux
 set showcmd
 
+set listchars=eol:¬,extends:»,tab:▸\ ,trail:›  " used if I enable :set list
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
