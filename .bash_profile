@@ -19,6 +19,7 @@ shopt -s histappend
 shopt -s nocaseglob
 
 eval "$(pyenv init -)"
+eval "$(rbenv init -)"
 
 fortune | cowsay
 

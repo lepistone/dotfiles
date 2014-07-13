@@ -28,3 +28,6 @@
 [submodule ".pyenv"]
 	path = .pyenv
 	url = git://github.com/yyuu/pyenv.git
+[submodule ".rbenv"]
+	path = .rbenv
+	url = git://github.com/sstephenson/rbenv.git
