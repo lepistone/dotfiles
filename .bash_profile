@@ -18,6 +18,8 @@ shopt -s extglob
 shopt -s histappend
 shopt -s nocaseglob
 
+eval "$(pyenv init -)"
+
 fortune | cowsay
 
 if [ "$(uname)" == "Darwin" ]; then

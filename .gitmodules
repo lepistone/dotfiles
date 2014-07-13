@@ -25,3 +25,6 @@
 [submodule "opt/git-remote-hg"]
 	path = opt/git-remote-hg
 	url = git://github.com/felipec/git-remote-bzr.git
+[submodule ".pyenv"]
+	path = .pyenv
+	url = git://github.com/yyuu/pyenv.git
