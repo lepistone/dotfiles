@@ -17,6 +17,7 @@ shopt -s cdspell
 shopt -s extglob
 shopt -s histappend
 shopt -s nocaseglob
+shopt -s histappend  # append, not overwrite history
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
