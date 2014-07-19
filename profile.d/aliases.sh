@@ -20,3 +20,5 @@ __git_complete g __git_main
 
 alias bzr-config='vi .bzr/branch/branch.conf'
 alias ls='ls --color'
+
+alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
