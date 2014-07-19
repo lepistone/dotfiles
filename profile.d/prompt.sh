@@ -18,10 +18,6 @@ GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="verbose"
 GIT_PS1_SHOWCOLORHINTS=1
 
-_vcprompt() {
-    __git_ps1 "(%s) "
-}
-
 _lastcommandfailed() {
   code=$?
   if [ $code != 0 ]; then
@@ -56,12 +52,11 @@ function _bg {
 }
 
 export BASEPROMPT="
-$(_fg $GRAY)\$(_vcprompt)\
 \$(_lastcommandfailed)\
 $(_fg $GREEN)\w\
+$(_fg $GRAY)\$(__git_ps1)\
 \$(_backgroundjobs)\
 $(_clr)"
+
 export PS1="${BASEPROMPT}
 $ "
-
-PROMPT_COMMAND='echo -ne "\033]0;${PWD/$HOME/~}\007"'
