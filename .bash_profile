@@ -10,7 +10,7 @@ fi
 . ~/dotfiles/profile.d/aliases.sh
 . ~/dotfiles/profile.d/exports.sh
 
-test -r ~/.profile.private && source ~/.profile.private
+test -r ~/dotfiles-private/.profile.private && source ~/dotfiles-private/.profile.private
 
 # Shell opts
 shopt -s cdspell
