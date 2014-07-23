@@ -5,7 +5,7 @@
 	ui = auto
 [alias]
 	ff = merge --ff-only
-	pullff = pull --ff-only
+	puff = pull --ff-only
 	noff = merge --no-ff
 	l = log --pretty=onelep --graph
 	la = log --pretty=onelep --graph --all
