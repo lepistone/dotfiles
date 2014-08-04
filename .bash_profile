@@ -22,10 +22,6 @@ shopt -s histappend
 shopt -s nocaseglob
 shopt -s histappend  # append, not overwrite history
 
-export PATH="$HOME/.pyenv/bin:$HOME/.rbenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
-
 fortune | cowsay
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -35,4 +31,8 @@ fi
 
 if [ "$(uname)" == "Linux" ]; then
         alias xclip="xclip -selection c"
+        export PATH="$HOME/.pyenv/bin:$HOME/.rbenv/bin:$PATH"
 fi
+
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
