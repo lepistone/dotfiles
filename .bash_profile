@@ -1,5 +1,8 @@
-# non interactive? exit now.
+# I leave that on for the moment, until I fully grasp the .bash* dance
+# across ubuntu and macos.
+echo this is ~/.bash_profile
 
+# non interactive? exit now.
 if [ -z "$PS1" ]; then
    return
 fi
@@ -19,6 +22,7 @@ shopt -s histappend
 shopt -s nocaseglob
 shopt -s histappend  # append, not overwrite history
 
+export PATH="$HOME/.pyenv/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
