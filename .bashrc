@@ -11,3 +11,4 @@ echo this is ~/.bashrc
 
 # gnome terminal needs this, for confusing reasons
 export TERM=xterm-256color
+export EDITOR=vim
