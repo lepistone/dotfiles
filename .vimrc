@@ -42,3 +42,6 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 let mapleader=","
 
 let g:netrw_list_hide="\.pyc$"
+
+" delete buffer, but keep the split
+map <leader>d :bp\|bd #<cr>
