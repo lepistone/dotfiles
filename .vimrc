@@ -23,6 +23,7 @@ set ruler
 set expandtab
 set autoindent
 autocmd FileType ruby,haml,eruby,yaml,html,xml,javascript,sass,cucumber,java,sh,css set sw=2 sts=2 ts=2
+autocmd BufNewFile,BufRead Vagrantfile setf ruby
 
 set cursorline
 set scrolloff=3
