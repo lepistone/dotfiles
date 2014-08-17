@@ -5,9 +5,12 @@
 # that means I don't load .bash_profile outside of tmux.
 # I'm always inside tmux, so why not?
 
-# I leave that on for the moment, until I fully grasp the .bash* dance
-# across ubuntu and macos.
-echo this is ~/.bashrc
+# Since I've yet to grasp the whole .bash* dance across ubuntu and macos,
+# I can touch ~/.debug_dotfiles just in case.
+if [ -e ~/.debug_dotfiles ]
+then
+  echo "This is $BASH_ARGV"
+fi
 
 # gnome terminal needs this, for confusing reasons
 export TERM=xterm-256color

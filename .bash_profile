@@ -1,6 +1,9 @@
-# I leave that on for the moment, until I fully grasp the .bash* dance
-# across ubuntu and macos.
-echo this is ~/.bash_profile
+# Since I've yet to grasp the whole .bash* dance across ubuntu and macos,
+# I can touch ~/.debug_dotfiles just in case.
+if [ -e ~/.debug_dotfiles ]
+then
+  echo "This is $BASH_ARGV"
+fi
 
 # non interactive? exit now.
 if [ -z "$PS1" ]; then
