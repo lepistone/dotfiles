@@ -9,8 +9,8 @@
 	noff = merge --no-ff
 	l = log --pretty=onelep --graph
 	la = log --pretty=onelep --graph --all
-	r = log --pretty=onelep --graph -20
-	ra = log --pretty=onelep --graph -20 --all
+	r = log --pretty=onelep --graph -8
+	ra = log --pretty=onelep --graph -8 --all
 [merge]
         tool = vimdiff
 	defaultToUpstream = true
