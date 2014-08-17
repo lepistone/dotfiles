@@ -22,7 +22,7 @@ shopt -s histappend
 shopt -s nocaseglob
 shopt -s histappend  # append, not overwrite history
 
-fortune | cowsay
+fortune
 
 if [ "$(uname)" == "Darwin" ]; then
 	alias ls='ls -pG'
