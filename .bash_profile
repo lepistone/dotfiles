@@ -35,6 +35,7 @@ fi
 if [ "$(uname)" == "Linux" ]; then
         alias xclip="xclip -selection c"
         export PATH="$HOME/.pyenv/bin:$HOME/.rbenv/bin:$PATH"
+        eval `dircolors $HOME/dotfiles/opt/dircolors-solarized/dircolors.ansi-dark`
 fi
 
 eval "$(pyenv init -)"
