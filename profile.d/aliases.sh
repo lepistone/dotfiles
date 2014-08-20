@@ -9,6 +9,11 @@ alias csvgrep='grep -r --color=auto --include=\*csv'
 alias fegrep='grep -r --color=auto --include=\*feature'
 alias agrep='grep -r --color=auto --include=\*xml --include=\*py --include=\*yml --include=\*csv --include=\*mako'
 
+if [ "$(uname)" == "Linux" ]
+then
+  alias ack="ack-grep"
+fi
+
 alias pack="ack --type=python"
 alias xack="ack --type=xml"
 
