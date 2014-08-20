@@ -37,3 +37,6 @@
 [submodule "opt/dircolors-solarized"]
 	path = opt/dircolors-solarized
 	url = git://github.com/huyz/dircolors-solarized.git
+[submodule "opt/gnome-terminal-colors-solarized"]
+	path = opt/gnome-terminal-colors-solarized
+	url = git://github.com/Anthony25/gnome-terminal-colors-solarized.git
