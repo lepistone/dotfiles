@@ -44,5 +44,9 @@ let mapleader=","
 
 let g:netrw_list_hide="\.pyc$"
 
+" this is annoying while editing other people's code.
+" I still expect git to fix whitespace problems in my changes.
+let g:pymode_trim_whitespaces = 0
+
 " delete buffer, but keep the split
 map <leader>d :bp\|bd #<cr>
