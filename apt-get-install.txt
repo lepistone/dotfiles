@@ -1,0 +1,12 @@
+fortunes-ubuntu-server
+fortunes-spam
+fortunes-fr
+fortunes-es
+fortunes-es-off
+fortunes-debian-hints
+fortunes
+fortunes-bofh-excuses
+
+texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev # for linuxbrew
+
+vim-gnome  # and remove vim. For terminal copy/paste
