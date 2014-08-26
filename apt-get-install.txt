@@ -10,3 +10,4 @@ fortunes-bofh-excuses
 texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev # for linuxbrew
 
 vim-gnome  # and remove vim. For terminal copy/paste
+libjpeg-turbo8-dev
