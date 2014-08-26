@@ -6,6 +6,7 @@ fortunes
 fortunes-bofh-excuses
 
 pass
+xsel
 
 texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev # for linuxbrew
 
