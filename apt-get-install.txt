@@ -7,6 +7,8 @@ fortunes-debian-hints
 fortunes
 fortunes-bofh-excuses
 
+pass
+
 texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev # for linuxbrew
 
 vim-gnome  # and remove vim. For terminal copy/paste
