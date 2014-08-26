@@ -1,3 +1,4 @@
+bison
 fortunes-ubuntu-server
 fortunes-spam
 fortunes-fr
@@ -12,3 +13,7 @@ texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev # for linuxb
 
 vim-gnome  # and remove vim. For terminal copy/paste
 libjpeg-turbo8-dev
+libpq-dev
+postgresql-server-dev-9.3
+libreadline-dev
+libsqlite3-dev
