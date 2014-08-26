@@ -1,8 +1,6 @@
 fortunes-ubuntu-server
 fortunes-spam
 fortunes-fr
-fortunes-es
-fortunes-es-off
 fortunes-debian-hints
 fortunes
 fortunes-bofh-excuses
