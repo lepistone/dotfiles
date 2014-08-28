@@ -17,3 +17,5 @@ libpq-dev
 postgresql-server-dev-9.3
 libreadline-dev
 libsqlite3-dev
+libxml2-dev
+libxslt1-dev
