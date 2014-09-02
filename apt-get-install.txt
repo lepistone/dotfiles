@@ -1,5 +1,6 @@
 bison
 fortunes-ubuntu-server
+fortunes-off
 fortunes-spam
 fortunes-fr
 fortunes-debian-hints
