@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://github.com/wincent/Command-T.git
+[submodule "opt/hg-prompt"]
+	path = opt/hg-prompt
+	url = hg::https://bitbucket.org/sjl/hg-prompt
