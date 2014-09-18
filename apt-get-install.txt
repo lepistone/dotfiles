@@ -20,3 +20,4 @@ libreadline-dev
 libsqlite3-dev
 libxml2-dev
 libxslt1-dev
+libsasl2-dev
