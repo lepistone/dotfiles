@@ -39,4 +39,5 @@ if [ "$(uname)" == "Linux" ]; then
 fi
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init -)"
