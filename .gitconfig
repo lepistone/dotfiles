@@ -13,7 +13,7 @@
 	r = log --pretty=onelep --graph -8
 	ra = log --pretty=onelep --graph -8 --all
 
-        amend = commit --amend
+        amend = commit --amend --verbose
         aa = add --all
         ap = add -p
         fap = fetch --all --prune
@@ -21,7 +21,7 @@
         d = diff
         d = diff --cached
         st = status
-        ci = commit
+        ci = commit --verbose
         co = checkout
 [merge]
         tool = vimdiff
