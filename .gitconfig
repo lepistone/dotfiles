@@ -19,7 +19,7 @@
         fap = fetch --all --prune
         b = branch
         d = diff
-        d = diff --cached
+        dc = diff --cached
         st = status
         ci = commit --verbose
         co = checkout
