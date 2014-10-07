@@ -40,6 +40,8 @@ set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+set nofoldenable
+
 let mapleader=","
 
 let g:netrw_list_hide="\.pyc$"
