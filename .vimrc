@@ -33,7 +33,7 @@ set nofoldenable
 
 let mapleader=","
 
-let g:netrw_list_hide="\.pyc$"
+let g:netrw_list_hide= netrw_gitignore#Hide()
 
 " this is annoying while editing other people's code.
 " I still expect git to fix whitespace problems in my changes.
