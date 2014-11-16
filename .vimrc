@@ -35,6 +35,10 @@ let mapleader=","
 
 let g:netrw_list_hide= netrw_gitignore#Hide()
 
+" makes CommandT much faster and as a nice side effect, in git repos
+" gitignored files are hidden
+let g:CommandTFileScanner="git"
+
 " this is annoying while editing other people's code.
 " I still expect git to fix whitespace problems in my changes.
 " I will need some sort of autocommand to disable trimming on other people's
