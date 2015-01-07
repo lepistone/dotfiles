@@ -23,3 +23,4 @@ libxml2-dev
 libxslt1-dev
 libsasl2-dev
 unixodbc-dev
+libcups2-dev
