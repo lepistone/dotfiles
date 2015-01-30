@@ -27,3 +27,7 @@ alias bzr-config='vi .bzr/branch/branch.conf'
 alias ls='ls --color'
 
 alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+alias wow='git status'
+alias such='git'
+alias very='git'
