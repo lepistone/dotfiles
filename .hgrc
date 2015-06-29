@@ -3,4 +3,4 @@ username = Leonardo Pistone <leonardo.pistone@camptocamp.com>
 ignore = ~/.hgignore
 
 [extensions]
-prompt = ~/dotfiles/opt/hg-prompt/prompt.py
+prompt = ~/opt/hg-prompt/prompt.py
