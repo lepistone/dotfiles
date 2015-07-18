@@ -4,7 +4,7 @@ execute pathogen#infect()
 "load vim-sensible now, so that I can override what it does
 runtime! plugin/sensible.vim
 
-" let g:solarized_termcolors=256 " uncomment for degraded 256-color palette
+let g:solarized_termcolors=256 " uncomment for degraded 256-color palette
 
 let g:solarized_visibility="low" " for :set list
 
