@@ -3,7 +3,6 @@ username = Leonardo Pistone <lpistone@gmail.com>
 ignore = ~/.hgignore
 
 [extensions]
-prompt = ~/dotfiles/opt/hg-prompt/prompt.py
 color =
 progress =
 pager =
