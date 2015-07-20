@@ -1,6 +1,14 @@
 [ui]
-username = Leonardo Pistone <leonardo.pistone@camptocamp.com>
+username = Leonardo Pistone <lpistone@gmail.com>
 ignore = ~/.hgignore
 
 [extensions]
-prompt = ~/opt/hg-prompt/prompt.py
+prompt = ~/dotfiles/opt/hg-prompt/prompt.py
+color =
+progress =
+pager =
+shelve =
+purge =
+
+[pager]
+attend = log, status, diff
