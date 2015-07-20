@@ -4,6 +4,10 @@ execute pathogen#infect()
 "load vim-sensible now, so that I can override what it does
 runtime! plugin/sensible.vim
 
+" The 256-color "degraded" setting works with a somewhat standard 256-color
+" palette.  The 16-color setting advised by the solarized docs requires a very
+" special, non-standard 16-color palette in my terminal that ruins all by
+" other non-solarized-aware stuff in the terminal.
 let g:solarized_termcolors=256 " uncomment for degraded 256-color palette
 
 let g:solarized_visibility="low" " for :set list
