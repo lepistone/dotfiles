@@ -1,7 +1,5 @@
 #!/bin/bash
 
-brew tap phinze/homebrew-cask
-
 brew update
 
 brew install ack
