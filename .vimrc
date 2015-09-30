@@ -49,6 +49,10 @@ let g:CommandTFileScanner="git"
 " code.
 " let g:pymode_trim_whitespaces = 0
 
+" let's try out syntastic
+let g:pymode_lint = 0
+let g:pymode_rope = 0
+
 " delete buffer, but keep the split
 map <leader>d :bp\|bd #<cr>
 
