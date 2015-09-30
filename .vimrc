@@ -51,3 +51,5 @@ let g:CommandTFileScanner="git"
 
 " delete buffer, but keep the split
 map <leader>d :bp\|bd #<cr>
+
+autocmd FileType ruby map <leader>b Orequire "pry" ; binding.pry<esc>
