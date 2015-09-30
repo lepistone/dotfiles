@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/vim-flagship"]
 	path = .vim/bundle/vim-flagship
 	url = git://github.com/tpope/vim-flagship.git
+[submodule ".vim/bundle/vim-repeat"]
+	path = .vim/bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
