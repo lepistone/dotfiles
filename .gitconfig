@@ -37,3 +37,5 @@
 	# I add a tab at the beginning to prevent the graph to break column
 	# alignment. That could be considered a bug in git.
 	onelep = %x09%h %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
+[gpg]
+	program = gpg2
