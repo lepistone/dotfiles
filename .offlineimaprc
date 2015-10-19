@@ -1,0 +1,18 @@
+[general]
+accounts = lpistone@gmail.com
+pythonfile=~/.offlineimap.py
+
+[Account lpistone@gmail.com]
+localrepository = lpistone@gmail.com-local
+remoterepository = lpistone@gmail.com-remote
+
+[Repository lpistone@gmail.com-local]
+type = GmailMaildir
+localfolders = ~/mail/lpistone@gmail.com
+
+[Repository lpistone@gmail.com-remote]
+type = Gmail
+remoteuser = lpistone@gmail.com
+folderfilter = lambda folder: folder == 'INBOX'
+cert_fingerprint = 0cfad087b887886d8ef34f8b4de0723d1392d294
+remotepasseval = get_pass('google/lpistone@gmail.com')
