@@ -6,4 +6,4 @@ then
   export PATH="$HOME/.linuxbrew/sbin:$HOME/.linuxbrew/bin:$PATH"
 fi
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/sbin:$PATH"
