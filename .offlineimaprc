@@ -14,5 +14,5 @@ localfolders = ~/mail/lpistone@gmail.com
 type = Gmail
 remoteuser = lpistone@gmail.com
 folderfilter = lambda folder: folder == 'INBOX'
-cert_fingerprint = 0cfad087b887886d8ef34f8b4de0723d1392d294
+cert_fingerprint = 4dad1c4bcedb86c396e385667f29e9368fd27a29
 remotepasseval = get_pass('google/lpistone@gmail.com')
