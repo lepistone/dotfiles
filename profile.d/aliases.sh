@@ -1,13 +1,5 @@
 alias grep='grep --color=auto'
 
-if [ "$(uname)" == "Linux" ]
-then
-  alias ack="ack-grep"
-fi
-
-alias pack="ack --type=python"
-alias xack="ack --type=xml"
-
 # I don't alias git=hub because that slows dows the git prompt. I can alias g though
 alias g='hub'
 # and make bash completion work for "g"
