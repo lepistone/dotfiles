@@ -8,3 +8,5 @@ __git_complete g __git_main
 alias ls='ls --color'
 
 alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+alias gpg='gpg2'
