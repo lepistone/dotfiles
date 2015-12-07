@@ -10,3 +10,5 @@ alias ls='ls --color'
 alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 alias gpg='gpg2'
+
+alias doma='docker-machine'
