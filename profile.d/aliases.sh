@@ -12,3 +12,4 @@ alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/R
 alias gpg='gpg2'
 
 alias doma='docker-machine'
+alias doco='docker-compose'
