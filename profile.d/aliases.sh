@@ -13,3 +13,4 @@ alias gpg='gpg2'
 
 alias doma='docker-machine'
 alias doco='docker-compose'
+alias bro='google-chrome --incognito $(docker-compose port odoo 8069)'
