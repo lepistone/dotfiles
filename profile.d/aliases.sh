@@ -12,5 +12,9 @@ alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/R
 alias gpg='gpg2'
 
 alias doma='docker-machine'
+complete -F _docker-machine doma
+
 alias doco='docker-compose'
+complete -F _docker-compose doco
+
 alias bro='google-chrome --incognito $(docker-compose port odoo 8069)'
