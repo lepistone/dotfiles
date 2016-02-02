@@ -82,3 +82,6 @@
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/vim-rst-tables"]
+	path = .vim/bundle/vim-rst-tables
+	url = git://github.com/nvie/vim-rst-tables.git
