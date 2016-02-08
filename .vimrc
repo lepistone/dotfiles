@@ -19,7 +19,9 @@ set hlsearch
 set ignorecase smartcase
 
 set expandtab
-autocmd FileType ruby,haml,eruby,yaml,html,xml,javascript,sass,cucumber,java,sh,css set sw=2 sts=2 ts=2
+
+set shiftwidth=0  " only change tabstop when needed
+
 autocmd BufNewFile,BufRead Vagrantfile setf ruby
 
 set cursorline
