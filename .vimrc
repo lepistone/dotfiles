@@ -55,7 +55,6 @@ let g:CommandTFileScanner="git"
 let g:pymode_lint = 0
 let g:pymode_rope = 0
 
-" syntastic recommended settings start
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -63,7 +62,10 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-" end
+
+" default rst2pseudoxml gives false positives on :ref: and more
+" not its fault, it is probably sphinx syntax
+let g:syntastic_rst_checkers = ["sphinx"]
 
 " delete buffer, but keep the split
 map <leader>d :bp\|bd #<cr>
