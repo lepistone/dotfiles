@@ -39,8 +39,6 @@ set nofoldenable
 
 let mapleader=","
 
-let g:netrw_list_hide= netrw_gitignore#Hide()
-
 " makes CommandT much faster and as a nice side effect, in git repos
 " gitignored files are hidden
 let g:CommandTFileScanner="git"
