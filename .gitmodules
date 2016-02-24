@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/python-mode"]
-	path = .vim/bundle/python-mode
-	url = git://github.com/klen/python-mode.git
 [submodule ".vim/bundle/vim-bundle-mako"]
 	path = .vim/bundle/vim-bundle-mako
 	url = git://github.com/sophacles/vim-bundle-mako.git
@@ -85,3 +82,6 @@
 [submodule ".vim/bundle/vim-rst-tables"]
 	path = .vim/bundle/vim-rst-tables
 	url = git://github.com/nvie/vim-rst-tables.git
+[submodule ".vim/bundle/jedi-vim"]
+	path = .vim/bundle/jedi-vim
+	url = git://github.com/davidhalter/jedi-vim.git
