@@ -30,6 +30,7 @@ set winwidth=79
 set colorcolumn=80
 set mouse=a
 set ttymouse=xterm2  " enable dragging inside tmux
+set number
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
