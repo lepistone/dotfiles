@@ -44,5 +44,6 @@ fi
 
 if [ -d ~/.pyenv ]; then
   export PATH="$HOME/.pyenv/bin:$PATH"
+  export PYENV_ROOT="$HOME/.pyenv"
   eval "$(pyenv init -)"
 fi
