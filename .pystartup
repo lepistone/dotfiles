@@ -9,6 +9,8 @@ import os
 import readline
 import rlcompleter
 
+from pprint import pprint as pp
+
 readline.parse_and_bind("tab: complete")
 
 historyPath = os.path.expanduser("~/.python_history")
