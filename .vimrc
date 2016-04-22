@@ -29,7 +29,11 @@ set showtabline=2
 set winwidth=79
 set colorcolumn=80
 set mouse=a
-set ttymouse=xterm2  " enable dragging inside tmux
+
+" if !has('nvim')
+"   set ttymouse=xterm2  " enable dragging inside tmux
+" endif
+
 set number
 
 set backup
