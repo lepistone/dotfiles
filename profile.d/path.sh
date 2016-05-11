@@ -11,3 +11,8 @@ if [ -d /usr/local/texlive/2015basic/bin/x86_64-darwin ]
 then
   export PATH=/usr/local/texlive/2015basic/bin/x86_64-darwin:$PATH
 fi
+
+if [ -d ~/opt/idea ]
+then
+  export PATH=~/opt/idea/bin:$PATH
+fi
