@@ -59,9 +59,10 @@ let g:CommandTFileScanner="git"
 let g:pymode_lint = 0
 let g:pymode_rope = 0
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}-%{&fileformat}]\ 0x%B\ \ %l,%c%V\ %o\ %O\ %P
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
