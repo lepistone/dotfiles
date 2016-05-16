@@ -21,6 +21,7 @@ set ignorecase smartcase
 set expandtab
 
 set shiftwidth=0  " only change tabstop when needed
+set tabstop=2
 
 autocmd BufNewFile,BufRead Vagrantfile setf ruby
 
