@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vim-jinja"]
 	path = .vim/bundle/vim-jinja
 	url = git://github.com/mitsuhiko/vim-jinja.git
+[submodule "opt/weechat-notification-center"]
+	path = opt/weechat-notification-center
+	url = git://github.com/sindresorhus/weechat-notification-center.git
