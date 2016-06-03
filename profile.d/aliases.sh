@@ -1,8 +1,6 @@
 alias grep='grep --color=auto'
 
-# I don't alias git=hub because that slows dows the git prompt. I can alias g though
-alias g='hub'
-# and make bash completion work for "g"
+alias g='git'
 __git_complete g __git_main
 
 alias ls='ls --color'
