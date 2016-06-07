@@ -16,7 +16,7 @@ source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
-GIT_PS1_SHOWUPSTREAM="verbose"
+GIT_PS1_SHOWUPSTREAM=(git verbose name)
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="describe"
 precmd () { __git_ps1 "
