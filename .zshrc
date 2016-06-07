@@ -8,10 +8,13 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 zstyle :compinstall filename '/Users/lep/.zshrc'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 setopt PROMPT_SUBST
+# autoload -U colors && colors
+PS1="
+%F{green}%~%f $?
+%# "
 
 alias g='git'
 
