@@ -12,9 +12,10 @@ autoload -Uz compinit && compinit
 
 setopt PROMPT_SUBST
 # autoload -U colors && colors
-PS1="
-%F{green}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)
-%# "
+source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+precmd () { __git_ps1 "
+%F{green}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)" "
+%# " }
 
 alias g='git'
 
