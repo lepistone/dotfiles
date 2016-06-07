@@ -13,7 +13,7 @@ autoload -Uz compinit && compinit
 setopt PROMPT_SUBST
 # autoload -U colors && colors
 PS1="
-%F{green}%~%f $?
+%F{green}%~%f%(?.. %F{red}exit %?%f)
 %# "
 
 alias g='git'
