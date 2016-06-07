@@ -4,12 +4,12 @@ SAVEHIST=$HISTSIZE
 
 bindkey -e
 
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 zstyle :compinstall filename '/Users/lep/.zshrc'
 
 autoload -Uz compinit
 compinit
-
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 unalias run-help
 autoload run-help
