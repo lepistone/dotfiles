@@ -13,6 +13,12 @@ autoload -Uz compinit && compinit
 setopt PROMPT_SUBST
 # autoload -U colors && colors
 source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWUPSTREAM="verbose"
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_DESCRIBE_STYLE="describe"
 precmd () { __git_ps1 "
 %F{green}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)" "
 %# " }
