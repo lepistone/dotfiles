@@ -23,6 +23,8 @@ precmd () { __git_ps1 '
 %F{green}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '
 %# ' }
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 alias g='git'
 
 unalias run-help
