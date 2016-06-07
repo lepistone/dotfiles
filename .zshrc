@@ -19,9 +19,9 @@ GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM=(git verbose name)
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="describe"
-precmd () { __git_ps1 "
-%F{green}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)" "
-%# " }
+precmd () { __git_ps1 '
+%F{green}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '
+%# ' }
 
 alias g='git'
 
