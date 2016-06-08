@@ -10,6 +10,10 @@ zstyle :compinstall filename '/Users/lep/.zshrc'
 
 autoload -Uz compinit && compinit
 
+. ~/dotfiles/profile.d/aliases.sh
+. ~/dotfiles/profile.d/exports.sh
+. ~/dotfiles/profile.d/path.sh
+
 setopt PROMPT_SUBST
 # autoload -U colors && colors
 source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
