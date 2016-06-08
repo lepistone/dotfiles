@@ -2,7 +2,7 @@ alias grep='grep --color=auto'
 
 alias g='git'
 
-alias ls='ls --color'
+alias ls='ls -pG'
 
 alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
