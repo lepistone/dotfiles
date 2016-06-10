@@ -29,8 +29,6 @@ precmd () { __git_ps1 '
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-alias g='git'
-
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
