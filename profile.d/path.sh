@@ -5,6 +5,10 @@ then
   export PATH="$HOME/.linuxbrew/sbin:$HOME/.linuxbrew/bin:$PATH"
 fi
 
+if [ -d ~/Library/Python/2.7/bin ]; then
+  export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+fi
+
 export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 
 if [ -d /usr/local/texlive/2015basic/bin/x86_64-darwin ]
