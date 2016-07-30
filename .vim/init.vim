@@ -1,1 +1,1 @@
-/Users/lep/.vimrc
+../.vimrc
