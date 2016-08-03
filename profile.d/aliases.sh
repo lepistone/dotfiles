@@ -14,3 +14,5 @@ alias bro='google-chrome --incognito $(docker-compose port odoo 8069)'
 
 alias goodssl='/usr/local/opt/openssl/bin/openssl'
 alias libressl='/usr/local/opt/libressl/bin/openssl'
+
+alias vi='nvim'
