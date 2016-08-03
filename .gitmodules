@@ -91,3 +91,6 @@
 [submodule "opt/weechat-notification-center"]
 	path = opt/weechat-notification-center
 	url = git://github.com/sindresorhus/weechat-notification-center.git
+[submodule ".vim/bundle/django.vim"]
+	path = .vim/bundle/django.vim
+	url = git://github.com/vim-scripts/django.vim.git
