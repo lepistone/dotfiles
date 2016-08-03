@@ -79,3 +79,4 @@ map <leader>d :bp\|bd #<cr>
 autocmd FileType ruby map <leader>b Orequire "pry" ; binding.pry<esc>
 
 au BufNewFile,BufRead *.t set filetype=cram
+au BufNewFile,BufRead *.html set filetype=htmldjango
