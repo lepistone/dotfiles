@@ -11,3 +11,6 @@ alias goodssl='/usr/local/opt/openssl/bin/openssl'
 alias libressl='/usr/local/opt/libressl/bin/openssl'
 
 alias vi='vim'
+
+alias an='ansible'
+alias anp='ansible-playbook'
