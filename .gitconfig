@@ -4,19 +4,15 @@
 [color]
 	ui = auto
 [alias]
-	ff = merge --ff-only
 	puff = pull --ff-only
-	noff = merge --no-ff
 
 	l = log --pretty=onelep --graph
 	la = log --pretty=onelep --graph --all
-	r = log --pretty=onelep --graph -8
-	ra = log --pretty=onelep --graph -8 --all
 
         amend = commit --amend --verbose
         aa = add --all
         ap = add -p
-        fap = fetch --all --prune
+        fa = fetch --all --prune
         b = branch
         d = diff
         dc = diff --cached
@@ -37,5 +33,3 @@
 	# I add a tab at the beginning to prevent the graph to break column
 	# alignment. That could be considered a bug in git.
 	onelep = %x09%h %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
-[gpg]
-	program = gpg2
