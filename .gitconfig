@@ -9,17 +9,17 @@
 	l = log --pretty=onelep --graph
 	la = log --pretty=onelep --graph --all
 
-        amend = commit --amend --verbose
-        aa = add --all
-        ap = add -p
-        fa = fetch --all --prune
-        b = branch
-        d = diff
-        dc = diff --cached
-        st = status
-        ci = commit --verbose
-        ca = commit --verbose --all
-        co = checkout
+	amend = commit --amend --verbose
+	aa = add --all
+	ap = add -p
+	fa = fetch --all --prune
+	b = branch
+	d = diff
+	dc = diff --cached
+	st = status
+	ci = commit --verbose
+	ca = commit --verbose --all
+	co = checkout
 	ff = merge --ff-only
 [merge]
         tool = vimdiff
