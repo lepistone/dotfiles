@@ -94,3 +94,12 @@
 [submodule ".vim/bundle/rust.vim"]
 	path = .vim/bundle/rust.vim
 	url = git://github.com/rust-lang/rust.vim.git
+[submodule ".vim/pack/main/opt/vim-solarized8"]
+	path = .vim/pack/main/opt/vim-solarized8
+	url = git@github.com:lifepillar/vim-solarized8
+[submodule ".vim/pack/main/start/vim-sensible"]
+	path = .vim/pack/main/start/vim-sensible
+	url = git@github.com:tpope/vim-sensible
+[submodule ".vim/pack/main/start/vim-fugitive"]
+	path = .vim/pack/main/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive
