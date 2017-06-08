@@ -27,7 +27,7 @@ set ignorecase smartcase
 
 set expandtab
 
-set shiftwidth=0  " only change tabstop when needed
+set shiftwidth=0  " 0 means use tabstop
 set tabstop=2
 
 set cursorline
