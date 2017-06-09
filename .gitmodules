@@ -1,6 +1,3 @@
-[submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle.old/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/vim-bundle-mako"]
 	path = .vim/bundle.old/vim-bundle-mako
 	url = git://github.com/sophacles/vim-bundle-mako.git
@@ -11,7 +8,7 @@
 	path = .vim/bundle.old/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-commentary"]
-	path = .vim/bundle.old/vim-commentary
+	path = .vim/pack/main/start/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
 [submodule "opt/git-remote-bzr"]
 	path = opt/git-remote-bzr
@@ -41,7 +38,7 @@
 	path = opt/hg-prompt
 	url = hg::https://bitbucket.org/sjl/hg-prompt
 [submodule ".vim/bundle/vim-unimpaired"]
-	path = .vim/bundle.old/vim-unimpaired
+	path = .vim/pack/main/start/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 [submodule ".vim/bundle/vim-io"]
 	path = .vim/bundle.old/vim-io
@@ -49,14 +46,11 @@
 [submodule ".vim/bundle/vim-cucumber"]
 	path = .vim/bundle.old/vim-cucumber
 	url = git://github.com/tpope/vim-cucumber.git
-[submodule ".vim/bundle/vim-sensible"]
-	path = .vim/bundle.old/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
 [submodule ".vim/bundle/vim-dispatch"]
 	path = .vim/bundle.old/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
 [submodule ".vim/bundle/vim-rhubarb"]
-	path = .vim/bundle.old/vim-rhubarb
+	path = .vim/pack/main/start/vim-rhubarb
 	url = git://github.com/tpope/vim-rhubarb.git
 [submodule ".vim/bundle/vim-bundler"]
 	path = .vim/bundle.old/vim-bundler
@@ -68,7 +62,7 @@
 	path = .vim/bundle.old/vim-flagship
 	url = git://github.com/tpope/vim-flagship.git
 [submodule ".vim/bundle/vim-repeat"]
-	path = .vim/bundle.old/vim-repeat
+	path = .vim/pack/main/start/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle.old/syntastic
