@@ -1,15 +1,8 @@
 if !has('packages')  " no packaging in vim<8: fallback to pathogen
   runtime pack/main/opt/vim-pathogen/autoload/pathogen.vim
-  runtime pack/main/opt/vim-solarized8/colors/solarized8_dark.vim
   execute pathogen#infect()
+  execute pathogen#interpose('pack/{}/opt/Apprentice')
 endif
-
-" Make true color work also in tmux.
-" Those variabled are filled automatically only when $TERM=xterm.
-" But in tmux, $TERM=screen so we have to set them manually.
-" See :help xgerm-true-color
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -19,8 +12,18 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-set termguicolors
-colorscheme solarized8_dark
+if has('termguicolors')
+  set termguicolors
+  colorscheme solarized8_dark
+  " Make true color work also in tmux.
+  " Those variabled are filled automatically only when $TERM=xterm.
+  " But in tmux, $TERM=screen so we have to set them manually.
+  " See :help xgerm-true-color
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+else
+  colorscheme apprentice
+endif
 
 set hlsearch
 set ignorecase smartcase
@@ -35,6 +38,8 @@ set showtabline=2
 set winwidth=79
 set colorcolumn=80
 set mouse=a
+set showcmd
+set modeline
 
 if !has('nvim')
   set ttymouse=xterm2  " enable dragging inside tmux

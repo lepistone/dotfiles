@@ -97,3 +97,12 @@
 [submodule ".vim/pack/main/opt/vim-pathogen"]
 	path = .vim/pack/main/opt/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen
+[submodule ".vim/pack/main/opt/flattened"]
+	path = .vim/pack/main/opt/flattened
+	url = git@github.com:romainl/flattened
+[submodule ".vim/pack/main/opt/moonshine-vim"]
+	path = .vim/pack/main/opt/moonshine-vim
+	url = git@github.com:KKPMW/moonshine-vim
+[submodule ".vim/pack/main/opt/Apprentice"]
+	path = .vim/pack/main/opt/Apprentice
+	url = git@github.com:romainl/Apprentice
