@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/vim-bundle-mako"]
 	path = .vim/bundle.old/vim-bundle-mako
 	url = git://github.com/sophacles/vim-bundle-mako.git
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle.old/vim-pathogen
-	url = git://github.com/tpope/vim-pathogen.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle.old/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
