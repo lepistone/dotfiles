@@ -40,6 +40,7 @@ set colorcolumn=80
 set mouse=a
 set showcmd
 set modeline
+set fixendofline
 
 if !has('nvim')
   set ttymouse=xterm2  " enable dragging inside tmux
