@@ -1,8 +1,6 @@
 [user]
 	email = lepistone@spotify.com
 	name = Leonardo Pistone
-[color]
-	ui = auto
 [alias]
 	puff = pull --ff-only
 
