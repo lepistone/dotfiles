@@ -22,8 +22,6 @@
 [merge]
         tool = vimdiff
 	defaultToUpstream = true
-[push]
-	default = simple
 [core]
 	excludesfile = ~/.gitignore_global
 [pretty]
