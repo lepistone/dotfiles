@@ -19,9 +19,6 @@
 [submodule ".rbenv"]
 	path = .rbenv
 	url = git://github.com/sstephenson/rbenv.git
-[submodule ".vim/bundle/puppet"]
-	path = .vim/bundle.old/puppet
-	url = git://github.com/rodjek/vim-puppet.git
 [submodule "opt/dircolors-solarized"]
 	path = opt/dircolors-solarized
 	url = git://github.com/huyz/dircolors-solarized.git
