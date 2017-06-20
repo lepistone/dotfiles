@@ -14,3 +14,5 @@ alias vi='vim'
 
 alias an='ansible'
 alias anp='ansible-playbook'
+
+alias bse='brew services'
