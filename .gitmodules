@@ -103,3 +103,6 @@
 [submodule ".vim/pack/main/opt/Apprentice"]
 	path = .vim/pack/main/opt/Apprentice
 	url = git@github.com:romainl/Apprentice
+[submodule ".vim/pack/main/start/vim-puppet"]
+	path = .vim/pack/main/start/vim-puppet
+	url = git@github.com:rodjek/vim-puppet
