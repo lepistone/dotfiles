@@ -15,6 +15,3 @@ fi
 # gnome terminal needs this, for confusing reasons
 export TERM=xterm-256color
 export EDITOR=vim
-
-#  travis shell completion. added by travis gem.
-[ -f /home/lpistone/.travis/travis.sh ] && source /home/lpistone/.travis/travis.sh
