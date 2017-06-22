@@ -1,6 +1,6 @@
 [ui]
 username = Leonardo Pistone <leonardo@pistone.me>
-ignore = ~/.hgignore
+ignore = ~/.cvsignore
 
 [extensions]
 color =

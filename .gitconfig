@@ -20,7 +20,7 @@
 [merge]
 	tool = vimdiff
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.cvsignore
 [pretty]
   # this looks similar to gary bernhardt's magic, without external
 	# magic.
