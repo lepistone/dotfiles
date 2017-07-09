@@ -103,3 +103,9 @@
 [submodule ".vim/pack/main/start/vim-puppet"]
 	path = .vim/pack/main/start/vim-puppet
 	url = git@github.com:rodjek/vim-puppet
+[submodule ".vim/pack/main/start/nginx.vim"]
+	path = .vim/pack/main/start/nginx.vim
+	url = git://github.com/chr4/nginx.vim.git
+[submodule ".vim/pack/main/start/vim-jinja"]
+	path = .vim/pack/main/start/vim-jinja
+	url = git://github.com/lepture/vim-jinja.git
