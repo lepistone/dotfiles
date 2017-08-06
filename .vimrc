@@ -49,8 +49,8 @@ endif
 set number
 
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/tmp/vim,~/tmp,/var/tmp,/tmp
+set directory=~/tmp/vim,~/tmp,/var/tmp,/tmp
 
 set nofoldenable
 
