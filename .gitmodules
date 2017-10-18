@@ -1,12 +1,6 @@
-[submodule ".vim/bundle/vim-commentary"]
+[submodule ".vim/pack/main/start/vim-commentary"]
 	path = .vim/pack/main/start/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule ".pyenv"]
-	path = .pyenv
-	url = https://github.com/yyuu/pyenv.git
-[submodule ".rbenv"]
-	path = .rbenv
-	url = https://github.com/sstephenson/rbenv.git
 [submodule "opt/dircolors-solarized"]
 	path = opt/dircolors-solarized
 	url = https://github.com/huyz/dircolors-solarized.git
@@ -16,13 +10,13 @@
 [submodule "opt/hg-prompt"]
 	path = opt/hg-prompt
 	url = hg::https://bitbucket.org/sjl/hg-prompt
-[submodule ".vim/bundle/vim-unimpaired"]
+[submodule ".vim/pack/main/start/vim-unimpaired"]
 	path = .vim/pack/main/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule ".vim/bundle/vim-rhubarb"]
+[submodule ".vim/pack/main/start/vim-rhubarb"]
 	path = .vim/pack/main/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
-[submodule ".vim/bundle/vim-repeat"]
+[submodule ".vim/pack/main/start/vim-repeat"]
 	path = .vim/pack/main/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "opt/weechat-notification-center"]
