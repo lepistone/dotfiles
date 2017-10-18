@@ -1,9 +1,3 @@
-[submodule ".vim/bundle/vim-bundle-mako"]
-	path = .vim/bundle.old/vim-bundle-mako
-	url = git://github.com/sophacles/vim-bundle-mako.git
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle.old/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/pack/main/start/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
@@ -25,60 +19,21 @@
 [submodule "opt/gnome-terminal-colors-solarized"]
 	path = opt/gnome-terminal-colors-solarized
 	url = git://github.com/Anthony25/gnome-terminal-colors-solarized.git
-[submodule ".vim/bundle/command-t"]
-	path = .vim/bundle.old/command-t
-	url = git://github.com/wincent/Command-T.git
 [submodule "opt/hg-prompt"]
 	path = opt/hg-prompt
 	url = hg::https://bitbucket.org/sjl/hg-prompt
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/pack/main/start/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
-[submodule ".vim/bundle/vim-io"]
-	path = .vim/bundle.old/vim-io
-	url = git://github.com/andreimaxim/vim-io.git
-[submodule ".vim/bundle/vim-cucumber"]
-	path = .vim/bundle.old/vim-cucumber
-	url = git://github.com/tpope/vim-cucumber.git
-[submodule ".vim/bundle/vim-dispatch"]
-	path = .vim/bundle.old/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
 [submodule ".vim/bundle/vim-rhubarb"]
 	path = .vim/pack/main/start/vim-rhubarb
 	url = git://github.com/tpope/vim-rhubarb.git
-[submodule ".vim/bundle/vim-bundler"]
-	path = .vim/bundle.old/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
-[submodule ".vim/bundle/vim-rails"]
-	path = .vim/bundle.old/vim-rails
-	url = git://github.com/tpope/vim-rails.git
-[submodule ".vim/bundle/vim-flagship"]
-	path = .vim/bundle.old/vim-flagship
-	url = git://github.com/tpope/vim-flagship.git
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/pack/main/start/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle.old/syntastic
-	url = git://github.com/scrooloose/syntastic.git
-[submodule ".vim/bundle/vim-rst-tables"]
-	path = .vim/bundle.old/vim-rst-tables
-	url = git://github.com/nvie/vim-rst-tables.git
-[submodule ".vim/bundle/vim-jinja"]
-	path = .vim/bundle.old/vim-jinja
-	url = git://github.com/mitsuhiko/vim-jinja.git
 [submodule "opt/weechat-notification-center"]
 	path = opt/weechat-notification-center
 	url = git://github.com/sindresorhus/weechat-notification-center.git
-[submodule ".vim/bundle/django.vim"]
-	path = .vim/bundle.old/django.vim
-	url = git://github.com/vim-scripts/django.vim.git
-[submodule ".vim/bundle/deoplete"]
-	path = .vim/bundle.old/deoplete
-	url = git://github.com/Shougo/deoplete.nvim.git
-[submodule ".vim/bundle/rust.vim"]
-	path = .vim/bundle.old/rust.vim
-	url = git://github.com/rust-lang/rust.vim.git
 [submodule ".vim/pack/main/opt/vim-solarized8"]
 	path = .vim/pack/main/opt/vim-solarized8
 	url = git@github.com:lifepillar/vim-solarized8
