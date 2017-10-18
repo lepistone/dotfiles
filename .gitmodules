@@ -52,3 +52,6 @@
 [submodule ".vim/pack/main/start/vim-jinja"]
 	path = .vim/pack/main/start/vim-jinja
 	url = git://github.com/lepture/vim-jinja.git
+[submodule ".vim/pack/main/start/vim-sleuth"]
+	path = .vim/pack/main/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
