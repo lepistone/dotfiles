@@ -1,39 +1,33 @@
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/pack/main/start/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule "opt/git-remote-bzr"]
-	path = opt/git-remote-bzr
-	url = git://github.com/felipec/git-remote-bzr.git
-[submodule "opt/git-remote-hg"]
-	path = opt/git-remote-hg
-	url = git://github.com/felipec/git-remote-hg.git
 [submodule ".pyenv"]
 	path = .pyenv
-	url = git://github.com/yyuu/pyenv.git
+	url = https://github.com/yyuu/pyenv.git
 [submodule ".rbenv"]
 	path = .rbenv
-	url = git://github.com/sstephenson/rbenv.git
+	url = https://github.com/sstephenson/rbenv.git
 [submodule "opt/dircolors-solarized"]
 	path = opt/dircolors-solarized
-	url = git://github.com/huyz/dircolors-solarized.git
+	url = https://github.com/huyz/dircolors-solarized.git
 [submodule "opt/gnome-terminal-colors-solarized"]
 	path = opt/gnome-terminal-colors-solarized
-	url = git://github.com/Anthony25/gnome-terminal-colors-solarized.git
+	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 [submodule "opt/hg-prompt"]
 	path = opt/hg-prompt
 	url = hg::https://bitbucket.org/sjl/hg-prompt
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/pack/main/start/vim-unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule ".vim/bundle/vim-rhubarb"]
 	path = .vim/pack/main/start/vim-rhubarb
-	url = git://github.com/tpope/vim-rhubarb.git
+	url = https://github.com/tpope/vim-rhubarb.git
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/pack/main/start/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
 [submodule "opt/weechat-notification-center"]
 	path = opt/weechat-notification-center
-	url = git://github.com/sindresorhus/weechat-notification-center.git
+	url = https://github.com/sindresorhus/weechat-notification-center.git
 [submodule ".vim/pack/main/opt/vim-solarized8"]
 	path = .vim/pack/main/opt/vim-solarized8
 	url = git@github.com:lifepillar/vim-solarized8
