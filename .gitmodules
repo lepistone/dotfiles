@@ -1,6 +1,6 @@
 [submodule ".vim/pack/main/start/vim-commentary"]
 	path = .vim/pack/main/start/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "opt/dircolors-solarized"]
 	path = opt/dircolors-solarized
 	url = https://github.com/huyz/dircolors-solarized.git
@@ -24,34 +24,34 @@
 	url = https://github.com/sindresorhus/weechat-notification-center.git
 [submodule ".vim/pack/main/opt/vim-solarized8"]
 	path = .vim/pack/main/opt/vim-solarized8
-	url = git@github.com:lifepillar/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8
 [submodule ".vim/pack/main/start/vim-sensible"]
 	path = .vim/pack/main/start/vim-sensible
-	url = git@github.com:tpope/vim-sensible
+	url = https://github.com/tpope/vim-sensible
 [submodule ".vim/pack/main/start/vim-fugitive"]
 	path = .vim/pack/main/start/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
 [submodule ".vim/pack/main/opt/vim-pathogen"]
 	path = .vim/pack/main/opt/vim-pathogen
-	url = git@github.com:tpope/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
 [submodule ".vim/pack/main/opt/flattened"]
 	path = .vim/pack/main/opt/flattened
-	url = git@github.com:romainl/flattened
+	url = https://github.com/romainl/flattened
 [submodule ".vim/pack/main/opt/moonshine-vim"]
 	path = .vim/pack/main/opt/moonshine-vim
-	url = git@github.com:KKPMW/moonshine-vim
+	url = https://github.com/KKPMW/moonshine-vim
 [submodule ".vim/pack/main/opt/Apprentice"]
 	path = .vim/pack/main/opt/Apprentice
-	url = git@github.com:romainl/Apprentice
+	url = https://github.com/romainl/Apprentice
 [submodule ".vim/pack/main/start/vim-puppet"]
 	path = .vim/pack/main/start/vim-puppet
-	url = git@github.com:rodjek/vim-puppet
+	url = https://github.com/rodjek/vim-puppet
 [submodule ".vim/pack/main/start/nginx.vim"]
 	path = .vim/pack/main/start/nginx.vim
-	url = git://github.com/chr4/nginx.vim.git
+	url = https://github.com/chr4/nginx.vim.git
 [submodule ".vim/pack/main/start/vim-jinja"]
 	path = .vim/pack/main/start/vim-jinja
-	url = git://github.com/lepture/vim-jinja.git
+	url = https://github.com/lepture/vim-jinja.git
 [submodule ".vim/pack/main/start/vim-sleuth"]
 	path = .vim/pack/main/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
