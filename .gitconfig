@@ -13,10 +13,10 @@
 	b = branch
 	d = diff
 	dc = diff --cached
-	st = status
 	ci = commit --verbose
 	co = checkout
 	ff = merge --ff-only
+	st = status -sb
 [merge]
 	tool = vimdiff
 [core]
