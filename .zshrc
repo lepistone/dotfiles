@@ -36,7 +36,7 @@ GIT_PS1_SHOWUPSTREAM=(git verbose name)
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="describe"
 precmd () { __git_ps1 '
-%F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
+%F{green}%m %F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
 %# ' }
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
