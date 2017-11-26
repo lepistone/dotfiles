@@ -18,7 +18,13 @@ autoload -Uz compinit && compinit
 
 setopt PROMPT_SUBST
 # autoload -U colors && colors
-source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+
+if [[ $(uname -s) == 'Darwin' ]]; then
+  source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+else
+  source /etc/bash_completion.d/git-prompt
+fi
+
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
