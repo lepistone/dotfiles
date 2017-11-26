@@ -41,10 +41,6 @@ precmd () { __git_ps1 '
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-unalias run-help
-autoload run-help
-HELPDIR="${USR_SHARE}/zsh/help"
-
 if [[ -d /usr/local/opt/fzf ]]; then
   [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
   source "${BREW_PREFIX}/opt/fzf/shell/key-bindings.zsh"
