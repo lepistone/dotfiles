@@ -20,9 +20,11 @@ setopt PROMPT_SUBST
 # autoload -U colors && colors
 
 if [[ $(uname -s) == 'Darwin' ]]; then
-  source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
+  BREW_PREFIX=$(brew --prefix)
 else
   source /etc/bash_completion.d/git-prompt
+  BREW_PREFIX=""
 fi
 
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -42,4 +44,6 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
 [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
-source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+source "${BREW_PREFIX}/opt/fzf/shell/key-bindings.zsh"
+
+unset BREW_PREFIX
