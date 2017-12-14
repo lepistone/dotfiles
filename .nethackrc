@@ -1,0 +1,13 @@
+OPTIONS=color
+OPTIONS=pickup_types:$
+
+#OPTIONS=decgraphics
+OPTIONS=windowtype:curses
+
+OPTIONS=extmenu
+OPTIONS=rawio
+OPTIONS=showexp
+OPTIONS=standout
+OPTIONS=time
+OPTIONS=hilite_pet
+OPTIONS=msg_window:full
