@@ -20,3 +20,5 @@ alias bse='brew services'
 alias java7='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.7); java -version'
 alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
 alias java9='export JAVA_HOME=$(/usr/libexec/java_home -F -v 9); java -version'
+
+alias jah='/usr/libexec/java_home'
