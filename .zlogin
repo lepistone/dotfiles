@@ -25,7 +25,6 @@ precmd () { __git_ps1 '
 # Aliases
 alias grep='grep --color=auto'
 alias g='git'
-alias ls='ls -pG'
 
 alias doma='docker-machine'
 alias doco='docker-compose'
@@ -67,6 +66,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
   source /usr/local/etc/bash_completion.d/git-prompt.sh
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
+  alias ls='ls -G'   # BSD ls understands -G
 else
   if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
     source /usr/share/git-core/contrib/completion/git-prompt.sh  # fedora
@@ -75,6 +75,7 @@ else
   fi
   BREW_PREFIX=""
   USR_SHARE="/usr/share"
+  alias ls='ls --color=auto'   # GNU ls understands --color
 fi
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
