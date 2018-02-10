@@ -67,7 +67,11 @@ if [[ $(uname -s) == 'Darwin' ]]; then
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
 else
-  source /etc/bash_completion.d/git-prompt
+  if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
+    source /usr/share/git-core/contrib/completion/git-prompt.sh  # fedora
+  else
+    source /etc/bash_completion.d/git-prompt  # ubuntu
+  fi
   BREW_PREFIX=""
   USR_SHARE="/usr/share"
 fi
