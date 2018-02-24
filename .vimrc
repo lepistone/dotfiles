@@ -47,6 +47,7 @@ if !has('nvim')
 endif
 
 set number
+set listchars=tab:▸\ ,eol:¬,trail:⍽
 
 set backup
 set backupdir=~/tmp/vim,~/tmp,/var/tmp,/tmp
