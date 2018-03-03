@@ -54,6 +54,7 @@ GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 CLOUDSDK_PYTHON=python
+export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
 
 # Path
