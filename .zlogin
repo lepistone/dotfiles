@@ -58,8 +58,8 @@ export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
 
 # Path
-if [ -d ~/Library/Python/2.7/bin ]; then
-  export PATH="$PATH:$HOME/Library/Python/2.7/bin"
+if [ -d /usr/local/opt/python@2/bin ]; then
+  export PATH="$PATH:/usr/local/opt/python@2/bin"
 fi
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
