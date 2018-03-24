@@ -58,3 +58,6 @@
 [submodule ".vim/pack/main/start/vim-vinegar"]
 	path = .vim/pack/main/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
+[submodule ".vim/pack/main/opt/gruvbox"]
+	path = .vim/pack/main/opt/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
