@@ -77,6 +77,8 @@ else
   BREW_PREFIX=""
   USR_SHARE="/usr/share"
   alias ls='ls --color=auto'   # GNU ls understands --color
+  alias vi='vimx'
+  alias vim='vimx'
 fi
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
