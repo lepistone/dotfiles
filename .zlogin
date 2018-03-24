@@ -49,7 +49,7 @@ alias jah='/usr/libexec/java_home'
 # Environment variables
 LESS=-FXRSq
 PYTHONSTARTUP=~/.pystartup
-export EDITOR=vim
+export EDITOR=vi
 GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
