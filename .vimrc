@@ -12,9 +12,11 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-if has('termguicolors')
+if has('termguicolors')  " fancy true colors
   set termguicolors
-  colorscheme solarized8_dark
+  let g:gruvbox_italic = 1
+  set background=dark
+  colorscheme gruvbox
   " Make true color work also in tmux.
   " Those variabled are filled automatically only when $TERM=xterm.
   " But in tmux, $TERM=screen so we have to set them manually.
