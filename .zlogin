@@ -49,7 +49,6 @@ alias jah='/usr/libexec/java_home'
 # Environment variables
 LESS=-FXRSq
 PYTHONSTARTUP=~/.pystartup
-export EDITOR=vi
 GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -70,6 +69,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
   alias ls='ls -G'   # BSD ls understands -G
+  export EDITOR=vim
 else
   if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
     source /usr/share/git-core/contrib/completion/git-prompt.sh  # fedora
@@ -81,6 +81,7 @@ else
   alias ls='ls --color=auto'   # GNU ls understands --color
   alias vi='vimx'
   alias vim='vimx'
+  export EDITOR=vimx
 fi
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
