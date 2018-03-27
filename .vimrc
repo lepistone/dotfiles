@@ -44,6 +44,7 @@ set mouse=a
 set showcmd
 set modeline
 set fixendofline
+set linebreak
 
 if !has('nvim')
   set ttymouse=xterm2  " enable dragging inside tmux
