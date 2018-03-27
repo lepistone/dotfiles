@@ -28,7 +28,8 @@ else
 endif
 
 set hlsearch
-set ignorecase smartcase
+set ignorecase
+set smartcase
 
 set expandtab
 
