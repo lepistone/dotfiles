@@ -56,6 +56,7 @@ CLOUDSDK_PYTHON=python
 export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8)
 
+[[ -f ~/.zsh.work.sh ]] && source ~/.zsh.work.sh
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
 
 # Path
