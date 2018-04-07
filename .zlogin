@@ -53,7 +53,11 @@ GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 CLOUDSDK_PYTHON=python
-[[ -x /usr/local/bin/less ]] && export MANPAGER="/usr/local/bin/less -is"
+
+# Use newer less if installed for example with brew. For example, this gets
+# nicer output in psql by default.
+export PAGER="less"
+export MANPAGER="less -is"
 
 export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8)
