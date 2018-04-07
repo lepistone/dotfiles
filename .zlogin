@@ -47,7 +47,7 @@ alias java10='export JAVA_HOME=$(/usr/libexec/java_home -F -v 10); java -version
 alias jah='/usr/libexec/java_home'
 
 # Environment variables
-export LESS=-FXRSqi
+export LESS=-FXRSqiM
 PYTHONSTARTUP=~/.pystartup
 GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
