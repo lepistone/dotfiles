@@ -53,6 +53,8 @@ GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 CLOUDSDK_PYTHON=python
+[[ -x /usr/local/bin/less ]] && export MANPAGER="/usr/local/bin/less -is"
+
 export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8)
 
