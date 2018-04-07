@@ -18,9 +18,9 @@ if has('termguicolors')  " fancy true colors
   set background=dark
   colorscheme gruvbox
   " Make true color work also in tmux.
-  " Those variabled are filled automatically only when $TERM=xterm.
+  " Those variables are filled automatically only when $TERM=xterm.
   " But in tmux, $TERM=screen so we have to set them manually.
-  " See :help xgerm-true-color
+  " See :help xterm-true-color
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 else
