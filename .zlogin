@@ -39,12 +39,15 @@ alias anp='ansible-playbook'
 
 alias bse='brew services'
 
-alias java7='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.7); java -version'
-alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
-alias java9='export JAVA_HOME=$(/usr/libexec/java_home -F -v 9); java -version'
-alias java10='export JAVA_HOME=$(/usr/libexec/java_home -F -v 10); java -version'
+if [[ -x /usr/libexec/java_home ]]; then
+  alias java7='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.7); java -version'
+  alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
+  alias java9='export JAVA_HOME=$(/usr/libexec/java_home -F -v 9); java -version'
+  alias java10='export JAVA_HOME=$(/usr/libexec/java_home -F -v 10); java -version'
 
-alias jah='/usr/libexec/java_home'
+  alias jah='/usr/libexec/java_home'
+  export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8)
+fi
 
 # Environment variables
 export LESS=-FXRSqiM
@@ -60,7 +63,6 @@ export PAGER="less"
 export MANPAGER="less -is"
 
 export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
-export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8)
 
 [[ -f ~/.zsh.work.sh ]] && source ~/.zsh.work.sh
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
