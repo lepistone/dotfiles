@@ -70,7 +70,6 @@ set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}-%{&fileformat}]\ 0x%B\ \ 
 
 autocmd BufNewFile,BufRead Vagrantfile setfiletype ruby
 autocmd BufNewFile,BufRead *.t setfiletype cram
-autocmd BufNewFile,BufRead *.html setfiletype htmldjango
 
 autocmd FileType ruby map <leader>b Orequire "pry" ; binding.pry<esc>
 
