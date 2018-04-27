@@ -6,7 +6,6 @@ if exists('*minpac#init')
 
   call minpac#add('chr4/nginx.vim')
   call minpac#add('lepture/vim-jinja')
-  call minpac#add('lifepillar/vim-solarized8', {'type': 'opt'})
   call minpac#add('morhetz/gruvbox', {'type': 'opt'})
   call minpac#add('rodjek/vim-puppet')
   call minpac#add('tpope/vim-commentary')
@@ -35,20 +34,16 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-if has('termguicolors')  " fancy true colors
-  set termguicolors
-  let g:gruvbox_italic = 1
-  set background=dark
-  colorscheme gruvbox
-  " Make true color work also in tmux.
-  " Those variables are filled automatically only when $TERM=xterm.
-  " But in tmux, $TERM=screen so we have to set them manually.
-  " See :help xterm-true-color
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-else
-  colorscheme apprentice
-endif
+set termguicolors
+let g:gruvbox_italic = 1
+set background=dark
+colorscheme gruvbox
+" Make true color work also in tmux.
+" Those variables are filled automatically only when $TERM=xterm.
+" But in tmux, $TERM=screen so we have to set them manually.
+" See :help xterm-true-color
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set hlsearch
 set ignorecase
