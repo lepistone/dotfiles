@@ -1,7 +1,30 @@
-if !has('packages')  " no packaging in vim<8: fallback to pathogen
-  runtime pack/main/opt/vim-pathogen/autoload/pathogen.vim
-  execute pathogen#infect()
-  execute pathogen#interpose('pack/{}/opt/Apprentice')
+source $VIMRUNTIME/defaults.vim
+
+if exists('*minpac#init')
+  call minpac#init()
+  call minpac#add('k-takata/minpac', {'type': 'opt'})
+
+  call minpac#add('chr4/nginx.vim')
+  call minpac#add('lepture/vim-jinja')
+  call minpac#add('lifepillar/vim-solarized8', {'type': 'opt'})
+  call minpac#add('morhetz/gruvbox', {'type': 'opt'})
+  call minpac#add('rodjek/vim-puppet')
+  call minpac#add('tpope/vim-commentary')
+  call minpac#add('tpope/vim-fugitive')
+  call minpac#add('tpope/vim-repeat')
+  call minpac#add('tpope/vim-rhubarb')
+  call minpac#add('tpope/vim-sensible')
+  call minpac#add('tpope/vim-unimpaired')
+  call minpac#add('tpope/vim-vinegar')
+  call minpac#add('w0rp/ale')
+endif
+
+command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
+command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+
+set backup
+if has('persistent_undo')
+  set undofile
 endif
 
 if exists('$TMUX')
@@ -40,10 +63,6 @@ set cursorline
 set showtabline=2
 set winwidth=79
 set colorcolumn=80
-set mouse=a
-set showcmd
-set modeline
-set fixendofline
 set linebreak
 
 if !has('nvim')
@@ -53,7 +72,6 @@ endif
 set number
 set listchars=tab:▸\ ,eol:¬,trail:⍽
 
-set backup
 set backupdir=~/tmp/vim,~/tmp,/var/tmp,/tmp
 set directory=~/tmp/vim,~/tmp,/var/tmp,/tmp
 
@@ -61,10 +79,7 @@ set nofoldenable
 
 let mapleader=","
 
-" makes CommandT much faster and as a nice side effect, in git repos
-" gitignored files are hidden
-let g:CommandTFileScanner="git"
-let g:netrw_list_hide='.pyc$'
+" let g:netrw_list_hide='.pyc$'
 
 set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}-%{&fileformat}]\ 0x%B\ \ %l,%c%V\ %o\ %O\ %P
 
