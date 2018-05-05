@@ -95,9 +95,13 @@ fi
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-if [[ -d /usr/local/opt/fzf ]]; then
+if [[ -d /usr/local/opt/fzf ]]; then  # brew
   [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
   source "${BREW_PREFIX}/opt/fzf/shell/key-bindings.zsh"
+fi
+
+if [[ -d /usr/share/fzf/shell ]]; then  # fedora
+  source /usr/share/fzf/shell/key-bindings.zsh
 fi
 
 unset BREW_PREFIX USR_SHARE
