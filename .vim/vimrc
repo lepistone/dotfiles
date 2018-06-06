@@ -69,6 +69,7 @@ set listchars=tab:▸\ ,eol:¬,trail:⍽
 
 set backupdir=~/tmp/vim,~/tmp,/var/tmp,/tmp
 set directory=~/tmp/vim,~/tmp,/var/tmp,/tmp
+set undodir=~/tmp/vim,~/tmp,/var/tmp,/tmp
 
 set nofoldenable
 
