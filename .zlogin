@@ -68,9 +68,17 @@ export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
 
 # Path
+
+# Python 2 installed with brew, see "brew info python@2"
 if [ -d /usr/local/opt/python@2/bin ]; then
   export PATH="$PATH:/usr/local/opt/python@2/bin"
 fi
+
+# entry points of Python 2 packages installed outside virtualenvs
+if [ -d /Users/lepistone/Library/Python/2.7/bin ]; then
+  export PATH="$PATH:/Users/lepistone/Library/Python/2.7/bin"
+fi
+
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
 if [[ $(uname -s) == 'Darwin' ]]; then
