@@ -5,6 +5,7 @@ if exists('*minpac#init')
   call minpac#add('k-takata/minpac', {'type': 'opt'})
 
   call minpac#add('chr4/nginx.vim')
+  call minpac#add('ElmCast/elm-vim')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('lepture/vim-jinja')
   call minpac#add('morhetz/gruvbox', {'type': 'opt'})
