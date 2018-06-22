@@ -4,12 +4,13 @@ if exists('*minpac#init')
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
 
-  call minpac#add('chr4/nginx.vim')
   call minpac#add('ElmCast/elm-vim')
+  call minpac#add('chr4/nginx.vim')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('lepture/vim-jinja')
   call minpac#add('morhetz/gruvbox', {'type': 'opt'})
   call minpac#add('rodjek/vim-puppet')
+  call minpac#add('supercollider/scvim')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-repeat')
@@ -20,6 +21,7 @@ if exists('*minpac#init')
   call minpac#add('w0rp/ale')
 endif
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
+
 command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
 set runtimepath+=/usr/local/opt/fzf
 
