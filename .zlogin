@@ -74,6 +74,11 @@ if [ -d /usr/local/opt/python@2/bin ]; then
   export PATH="$PATH:/usr/local/opt/python@2/bin"
 fi
 
+# because brew mysql is 8.0
+if [ -d /usr/local/opt/mysql@5.7/bin ]; then
+  export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
+fi
+
 # entry points of Python 2 packages installed outside virtualenvs
 if [ -d /Users/lepistone/Library/Python/2.7/bin ]; then
   export PATH="$PATH:/Users/lepistone/Library/Python/2.7/bin"
