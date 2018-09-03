@@ -49,6 +49,7 @@ if [[ -x /usr/libexec/java_home ]]; then
   alias jah='/usr/libexec/java_home'
   export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8)
 fi
+export MAVEN_OPTS='-Xverify:none -XX:TieredStopAtLevel=1'
 
 # Environment variables
 export LESS=-FXRSqiM
