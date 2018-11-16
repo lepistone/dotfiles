@@ -83,9 +83,18 @@ if [ -d /usr/local/opt/mysql@5.7/bin ]; then
   export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
 fi
 
+# if [ -d /usr/local/opt/postgresql@9.6/bin ]; then
+#   export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+# fi
+
 # entry points of Python 2 packages installed outside virtualenvs
 if [ -d /Users/lepistone/Library/Python/2.7/bin ]; then
   export PATH="$PATH:/Users/lepistone/Library/Python/2.7/bin"
+fi
+
+# prefer node 8. I don't need nvm or n right now
+if [ -d /usr/local/opt/node@8/bin ]; then
+  export PATH="/usr/local/opt/node@8/bin:$PATH"
 fi
 
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
