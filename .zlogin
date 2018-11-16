@@ -39,6 +39,8 @@ alias anp='ansible-playbook'
 
 alias bse='brew services'
 
+alias npm0='npm ls --depth=0'
+
 if [[ -x /usr/libexec/java_home ]]; then
   alias java7='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.7); java -version'
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
