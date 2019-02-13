@@ -96,6 +96,11 @@ if [ -d /usr/local/opt/node@8/bin ]; then
   export PATH="/usr/local/opt/node@8/bin:$PATH"
 fi
 
+# prefer brewed ruby
+if [ -d /usr/local/opt/ruby/bin ]; then
+  export PATH="/usr/local/opt/ruby/bin:$PATH"
+fi
+
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
 if [[ $(uname -s) == 'Darwin' ]]; then
