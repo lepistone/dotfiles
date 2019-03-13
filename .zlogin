@@ -103,6 +103,11 @@ if [ -d /usr/local/opt/ruby/bin ]; then
   export PATH="/usr/local/opt/ruby/bin:$PATH"
 fi
 
+# use brewed gems
+if [ -d /usr/local/lib/ruby/gems/2.6.0/bin ]; then
+  export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+fi
+
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
 if [[ $(uname -s) == 'Darwin' ]]; then
