@@ -44,11 +44,9 @@ alias npm0='npm ls --depth=0'
 alias ssh='TERM=screen-256color ssh'
 
 if [[ -x /usr/libexec/java_home ]]; then
-  alias java7='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.7); java -version'
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
-  alias java9='export JAVA_HOME=$(/usr/libexec/java_home -F -v 9); java -version'
-  alias java10='export JAVA_HOME=$(/usr/libexec/java_home -F -v 10); java -version'
   alias java11='export JAVA_HOME=$(/usr/libexec/java_home -F -v 11); java -version'
+  alias java12='export JAVA_HOME=$(/usr/libexec/java_home -F -v 12); java -version'
 
   alias jah='/usr/libexec/java_home'
 fi
