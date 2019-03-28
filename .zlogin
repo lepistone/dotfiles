@@ -49,6 +49,8 @@ if [[ -x /usr/libexec/java_home ]]; then
   alias java12='export JAVA_HOME=$(/usr/libexec/java_home -F -v 12); java -version'
 
   alias jah='/usr/libexec/java_home'
+
+  export JAVA_HOME=$(/usr/libexec/java_home -F -v 11)
 fi
 export MAVEN_OPTS='-Xverify:none -XX:TieredStopAtLevel=1'
 
