@@ -19,8 +19,6 @@
 	st = status -sb
 [merge]
 	tool = vimdiff
-[core]
-	excludesfile = ~/.cvsignore
 [pretty]
   # this looks similar to gary bernhardt's magic, without external
 	# magic.
