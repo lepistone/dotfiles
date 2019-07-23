@@ -1,6 +1,6 @@
 [user]
-	email = lepistone@spotify.com
 	name = Leonardo Pistone
+	useconfigonly = true
 [alias]
 	puff = pull --ff-only
 
