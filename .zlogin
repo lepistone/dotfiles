@@ -96,11 +96,6 @@ if [ -d /Users/lepistone/Library/Python/2.7/bin ]; then
   export PATH="$PATH:/Users/lepistone/Library/Python/2.7/bin"
 fi
 
-# prefer node 8. I don't need nvm or n right now
-if [ -d /usr/local/opt/node@8/bin ]; then
-  export PATH="/usr/local/opt/node@8/bin:$PATH"
-fi
-
 # prefer brewed ruby
 if [ -d /usr/local/opt/ruby/bin ]; then
   export PATH="/usr/local/opt/ruby/bin:$PATH"
