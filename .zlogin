@@ -111,10 +111,6 @@ if [ -d /usr/local/lib/ruby/gems/2.6.0/bin ]; then
   export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 fi
 
-if [ -d /usr/local/lib/ruby/gems/2.6.0/bin ]; then
-  export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
-fi
-
 if [ -d $HOME/.cargo/bin ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
