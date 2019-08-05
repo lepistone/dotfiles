@@ -44,6 +44,8 @@ alias npm0='npm ls --depth=0'
 alias ssh='TERM=screen-256color ssh'
 
 alias k='kubectl'
+alias kc='kubectx'
+alias kn='kubens'
 
 if [[ -x /usr/libexec/java_home ]]; then
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
