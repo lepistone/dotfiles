@@ -79,25 +79,6 @@ export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 
 # Path
 
-# Python 2 installed with brew, see "brew info python@2"
-if [ -d /usr/local/opt/python@2/bin ]; then
-  export PATH="$PATH:/usr/local/opt/python@2/bin"
-fi
-
-# because brew mysql is 8.0
-if [ -d /usr/local/opt/mysql@5.7/bin ]; then
-  export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
-fi
-
-# if [ -d /usr/local/opt/postgresql@9.6/bin ]; then
-#   export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
-# fi
-
-# entry points of Python 2 packages installed outside virtualenvs
-if [ -d /Users/lepistone/Library/Python/2.7/bin ]; then
-  export PATH="$PATH:/Users/lepistone/Library/Python/2.7/bin"
-fi
-
 # prefer brewed ruby
 if [ -d /usr/local/opt/ruby/bin ]; then
   export PATH="/usr/local/opt/ruby/bin:$PATH"
