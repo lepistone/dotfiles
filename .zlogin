@@ -58,7 +58,7 @@ if [[ -x /usr/libexec/java_home ]]; then
 
   export JAVA_HOME=$(/usr/libexec/java_home -F -v 11)
 fi
-export MAVEN_OPTS='-Xverify:none -XX:TieredStopAtLevel=1'
+export MAVEN_OPTS='-XX:TieredStopAtLevel=1'
 
 # Environment variables
 export LESS=-FXRSqiM
