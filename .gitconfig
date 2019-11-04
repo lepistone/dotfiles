@@ -26,7 +26,7 @@
 	# alignment. That could be considered a bug in git.
 	onelep = %x09%h %G? %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
 [commit]
-	gpgsign = true
+	gpgsign = false
 [tag]
 	gpgsign = true
 [push]
