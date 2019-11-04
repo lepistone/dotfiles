@@ -31,3 +31,8 @@
 	gpgsign = true
 [push]
 	gpgsign = if-asked
+[hub]
+	host = ghe.spotify.net
+[feature]
+	manyFiles = true
+	experimental = true
