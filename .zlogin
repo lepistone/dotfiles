@@ -94,6 +94,10 @@ if [ -d $HOME/.cargo/bin ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
 
+if [ -d $HOME/go/bin ]; then
+  export PATH="$PATH:$HOME/go/bin"
+fi
+
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
 if [[ $(uname -s) == 'Darwin' ]]; then
