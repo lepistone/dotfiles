@@ -100,6 +100,10 @@ fi
 
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
+for dir in $HOME/.pyenv/versions/*; do
+  export PATH="$PATH:$dir/bin"
+done
+
 if [[ $(uname -s) == 'Darwin' ]]; then
   source /usr/local/etc/bash_completion.d/git-prompt.sh
   BREW_PREFIX="$(brew --prefix)"
