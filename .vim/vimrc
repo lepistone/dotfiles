@@ -2,10 +2,13 @@ source $VIMRUNTIME/defaults.vim
 
 if exists('*minpac#init')
   call minpac#init()
-  call minpac#add('k-takata/minpac', {'type': 'opt'})
   call minpac#add('ElmCast/elm-vim')
   call minpac#add('chr4/nginx.vim')
+  call minpac#add('fatih/vim-go', {'rev': 'v1.21'})
   call minpac#add('junegunn/fzf.vim')
+  call minpac#add('junegunn/goyo.vim')
+  call minpac#add('junegunn/limelight.vim')
+  call minpac#add('k-takata/minpac', {'type': 'opt'})
   call minpac#add('lepture/vim-jinja')
   call minpac#add('morhetz/gruvbox', {'type': 'opt'})
   call minpac#add('rodjek/vim-puppet')
@@ -17,6 +20,7 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-repeat')
   call minpac#add('tpope/vim-rhubarb')
+  call minpac#add('tpope/vim-scriptease')
   call minpac#add('tpope/vim-sensible')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-vinegar')
@@ -87,6 +91,7 @@ autocmd BufNewFile,BufRead *.t setfiletype cram
 
 autocmd FileType ruby map <leader>b Orequire "pry" ; binding.pry<esc>
 
+autocmd FileType go nmap <leader>r <Plug>(go-run)
 " autocmd FileType mail setlocal formatoptions+=aw
 " nah, unfortunately gmail stopped supporting format=flowed kind of right now.
 
