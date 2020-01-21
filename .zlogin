@@ -106,6 +106,10 @@ if [[ -d $HOME/.pyenv/versions ]]; then
   done
 fi
 
+if [[ -d /usr/local/opt/python@3.8/bin ]]; then
+  export PATH="$PATH:/usr/local/opt/python@3.8/bin"
+fi
+
 if [[ $(uname -s) == 'Darwin' ]]; then
   source /usr/local/etc/bash_completion.d/git-prompt.sh
   BREW_PREFIX="$(brew --prefix)"
