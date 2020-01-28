@@ -1,2 +1,5 @@
 # Debugging
-[[ -e ~/.debug_dotfiles ]] && echo -n "${(%):-%N} " && id -un
+if [[ -e ~/.debug_dotfiles ]]; then
+  echo -n "${(%):-%N} "
+  id -un
+fi
