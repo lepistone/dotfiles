@@ -69,7 +69,6 @@ PYTHONSTARTUP=~/.pystartup
 GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-CLOUDSDK_PYTHON=python
 
 # Use newer less if installed for example with brew. For example, this gets
 # nicer output in psql by default.
