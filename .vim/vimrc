@@ -3,8 +3,9 @@ source $VIMRUNTIME/defaults.vim
 if exists('*minpac#init')
   call minpac#init()
   call minpac#add('ElmCast/elm-vim')
+  call minpac#add('cespare/vim-toml')
   call minpac#add('chr4/nginx.vim')
-  call minpac#add('fatih/vim-go', {'rev': 'v1.22'})
+  call minpac#add('fatih/vim-go')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('junegunn/goyo.vim')
   call minpac#add('junegunn/limelight.vim')
@@ -12,6 +13,9 @@ if exists('*minpac#init')
   call minpac#add('lepture/vim-jinja')
   call minpac#add('majutsushi/tagbar')
   call minpac#add('morhetz/gruvbox', {'type': 'opt'})
+  call minpac#add('pearofducks/ansible-vim')
+  call minpac#add('psf/black')
+  call minpac#add('racer-rust/vim-racer')
   call minpac#add('rodjek/vim-puppet')
   call minpac#add('rust-lang/rust.vim')
   call minpac#add('supercollider/scvim')
@@ -105,3 +109,19 @@ nnoremap <C-p> :<C-u>FZF<CR>
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
 command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
 command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+
+
+let g:rust_conceal = 1
+let g:rust_conceal_pub = 1
+let g:rust_fold = 2
+let g:rustfmt_autosave = 1
+
+" let g:racer_experimental_completer = 1
+" let g:racer_insert_paren = 1
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap gt <Plug>(rust-def-tab)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
+
+" autocmd BufWritePre *.py execute ':Black'
