@@ -74,6 +74,7 @@ FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # nicer output in psql by default.
 export PAGER="less"
 export MANPAGER="less -is"
+export GIT_PAGER='/usr/local/share/git-core/contrib/diff-highlight/diff-highlight|less'
 
 export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
 
