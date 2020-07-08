@@ -23,7 +23,9 @@ GIT_PS1_DESCRIBE_STYLE="describe"
 # Prompt
 precmd () { __git_ps1 '
 %F{green}%m %F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
-%# ' }
+%# '
+RPROMPT=%F{cyan}$(kubectl config current-context)%F{reset}:%F{yellow}$(kubectl config view --minify -o 'jsonpath={..namespace}')
+}
 
 # Aliases
 alias grep='grep --color=auto'
