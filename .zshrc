@@ -30,7 +30,7 @@ RPROMPT=%F{cyan}$(kubectl config current-context)%F{reset}:%F{yellow}$(kubectl c
 # Aliases
 alias grep='grep --color=auto'
 alias g='git'
-
+alias dotfiles='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias doma='docker-machine'
 alias doco='docker-compose'
 
