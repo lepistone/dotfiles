@@ -2,8 +2,6 @@
 	name = Leonardo Pistone
 	useconfigonly = true
 [alias]
-	puff = pull --ff-only
-
 	l = log --pretty=onelep --graph
 	la = log --pretty=onelep --graph --all
 
@@ -15,7 +13,6 @@
 	dc = diff --cached
 	ci = commit --verbose
 	co = checkout
-	ff = merge --ff-only
 	st = status -sb
 [merge]
 	tool = vimdiff
@@ -36,3 +33,5 @@
 [feature]
 	manyFiles = true
 	experimental = true
+[pull]
+	ff = only
