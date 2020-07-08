@@ -79,6 +79,7 @@ export MANPAGER="less -is"
 export GIT_PAGER='/usr/local/share/git-core/contrib/diff-highlight/diff-highlight|less'
 
 export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
+export CLOUDSDK_PYTHON=python3
 
 [[ -f ~/.zsh.work.sh ]] && source ~/.zsh.work.sh
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
