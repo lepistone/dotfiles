@@ -92,8 +92,8 @@ if [ -d /usr/local/opt/ruby/bin ]; then
 fi
 
 # use brewed gems
-if [ -d /usr/local/lib/ruby/gems/2.6.0/bin ]; then
-  export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+if [ -d /usr/local/lib/ruby/gems/2.7.0/bin ]; then
+  export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 fi
 
 if [ -d $HOME/.cargo/bin ]; then
