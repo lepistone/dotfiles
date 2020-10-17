@@ -32,6 +32,7 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-sensible')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-vinegar')
+  call minpac#add('vim-ruby/vim-ruby')
 endif
 set runtimepath+=/usr/local/opt/fzf  " managed by brew istead of minpac
 
