@@ -35,3 +35,5 @@
 	experimental = true
 [pull]
 	ff = only
+[diff]
+	colorMoved = dimmed-zebra
