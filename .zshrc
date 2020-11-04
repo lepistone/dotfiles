@@ -104,6 +104,9 @@ fi
 
 export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 
+# Prefer Python distribution from python.org
+PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
+
 if [[ -d $HOME/.pyenv/versions ]]; then
   for dir in $HOME/.pyenv/versions/*; do
     export PATH="$PATH:$dir/bin"
