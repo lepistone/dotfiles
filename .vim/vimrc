@@ -103,7 +103,7 @@ set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}-%{&fileformat}]\ 0x%B\ \ 
 autocmd BufNewFile,BufRead Vagrantfile setfiletype ruby
 autocmd BufNewFile,BufRead *.t setfiletype cram
 
-autocmd FileType ruby map <leader>b Orequire "pry" ; binding.pry<esc>
+autocmd FileType ruby nnoremap <leader>b Orequire "pry" ; binding.pry<esc>
 
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 " autocmd FileType mail setlocal formatoptions+=aw
