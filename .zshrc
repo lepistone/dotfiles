@@ -65,7 +65,7 @@ export MAVEN_OPTS='-XX:TieredStopAtLevel=1'
 
 # Environment variables
 export LESS=-FXRSqiM
-PYTHONSTARTUP=~/.pystartup
+export PYTHONSTARTUP=~/.pystartup
 GPG_TTY=$(tty)
 FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
