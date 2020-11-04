@@ -58,7 +58,6 @@ set t_ZR=[23m
 
 set termguicolors
 let g:gruvbox_italic = 1
-set background=dark
 colorscheme gruvbox
 " Make true color work also in tmux.
 " Those variables are filled automatically only when $TERM=xterm.
