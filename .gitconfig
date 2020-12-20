@@ -37,3 +37,5 @@
 	ff = only
 [diff]
 	colorMoved = dimmed-zebra
+[init]
+	defaultBranch = main
