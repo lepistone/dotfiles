@@ -119,7 +119,8 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-  \   'python': ['black'],
+  \   'python': ['black', 'isort'],
+  \   'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'],
   \   '*': ['trim_whitespace', 'remove_trailing_lines']
   \}
 
@@ -131,7 +132,6 @@ command! PackStatus packadd minpac  | call minpac#status()
 let g:rust_conceal = 1
 let g:rust_conceal_pub = 1
 let g:rust_fold = 2
-let g:rustfmt_autosave = 1
 
 " let g:racer_experimental_completer = 1
 " let g:racer_insert_paren = 1
