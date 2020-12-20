@@ -73,15 +73,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
-set expandtab
-
-set shiftwidth=0  " 0 means use tabstop
-set tabstop=2
-
 set cursorline
 set showtabline=2
-set winwidth=79
-set colorcolumn=80
 set linebreak
 
 if !has('nvim')
