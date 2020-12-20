@@ -1,6 +1,8 @@
 source $VIMRUNTIME/defaults.vim
 
-if exists('*minpac#init')
+function! PackInit() abort
+  packadd minpac
+
   call minpac#init()
   call minpac#add('ElmCast/elm-vim')
   call minpac#add('cespare/vim-toml')
@@ -32,7 +34,8 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-vinegar')
   call minpac#add('vim-ruby/vim-ruby')
-endif
+endfunction
+
 set runtimepath+=/usr/local/opt/fzf  " managed by brew istead of minpac
 
 set backup
@@ -120,12 +123,9 @@ let g:ale_fixers = {
   \   '*': ['trim_whitespace', 'remove_trailing_lines']
   \}
 
-" Define user commands for updating/cleaning the plugins.
-" Each of them loads minpac, reloads .vimrc to register the
-" information of plugins, then performs the task.
-command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
-command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
-command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+command! PackUpdate call PackInit() | call minpac#update()
+command! PackClean  call PackInit() | call minpac#clean()
+command! PackStatus packadd minpac  | call minpac#status()
 
 
 let g:rust_conceal = 1
