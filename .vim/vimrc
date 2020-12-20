@@ -8,7 +8,7 @@ function! PackInit() abort
   call minpac#add('cespare/vim-toml')
   call minpac#add('chr4/nginx.vim')
   call minpac#add('dense-analysis/ale')
-  call minpac#add('fatih/vim-go', {'rev': 'v*'})
+  " call minpac#add('fatih/vim-go', {'rev': 'v*'})
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('junegunn/goyo.vim')
   call minpac#add('junegunn/limelight.vim')
@@ -118,9 +118,8 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 let g:ale_fix_on_save = 1
+
 let g:ale_fixers = {
-  \   'python': ['black', 'isort'],
-  \   'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'],
   \   '*': ['trim_whitespace', 'remove_trailing_lines']
   \}
 
