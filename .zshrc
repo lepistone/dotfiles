@@ -50,7 +50,7 @@ alias ssh='TERM=screen-256color ssh'
 
 alias k='kubectl'
 alias kc='kubectx'
-alias kn='kubens'
+alias kns='kubens'
 
 if [[ -x /usr/libexec/java_home ]]; then
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
