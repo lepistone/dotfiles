@@ -4,57 +4,8 @@
 
   vars:
     base_dir: ~/tmp/h
-    brew_packages:
-      common:
-        - git
-        - tree
-        - gnupg
-        - heroku
-        - httpie
-        - jq
-        - libmemcached
-        - libressl
-        - maven
-        - mysql
-        - node
-        - postgresql
-        - pstree
-        - python
-        - python3
-        - reattach-to-user-namespace
-        - ruby
-        - the_silver_searcher
-        - tmux
-        - tree
-        - vim
-        - youtube-dl
-        - zsh
-        - zsh-syntax-highlighting
-      work:
-        - hmtools
-      home: []
-
     cask_packages:
       common:
-        - 1password
-        - calibre
-        - docker
-        - dropbox
-        - font-inconsolata-dz
-        - google-chrome
-        - iterm2
-        - java
-        - kindle
-        - skype
-        - spectacle
-        - spotify
-        - steam
-        - vagrant
-        - virtualbox
-        - virtualbox-extension-pack
-        - vlc
-      home:
-        - intellij-idea-ce
         - pycharm-ce
       work:
         - intellij-idea
@@ -71,9 +22,47 @@
         dest: "{{ base_dir }}/dotfiles"
     - name: install brew packages
       homebrew:
-        name: "{{ item }}"
-      with_items: "{{ brew_packages.common }} + {{ brew_packages.home }}"
+        name:
+          - ansible
+          - bash
+          - curl
+          - fd
+          - fzf
+          - git
+          - gnupg
+          - jq
+          - kubernetes-cli
+          - less
+          - libressl
+          - maven
+          - mosh
+          - nethack
+          - openssh
+          - openssl
+          - pstree
+          - python
+          - ripgrep
+          - tmux
+          - tree
+          - vim
+          - youtube-dl
+          - zsh
+          - zsh-syntax-highlighting
+          # - zsh-completions  TODO needs setup
     - name: install cask packages
       homebrew_cask:
-        name: "{{ item }}"
-      with_items: "{{ cask_packages.common }} + {{ cask_packages.home }}"
+        name:
+          - 1password
+          - docker
+          - firefox
+          - font-jetbrains-mono
+          - google-cloud-sdk
+          - intellij-idea-ce
+          - iterm2
+          - mullvadvpn
+          - rectangle
+          - skype
+          - steam
+          - telegram
+          - tomighty
+          - vlc
