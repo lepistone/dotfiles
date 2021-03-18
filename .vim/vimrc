@@ -63,6 +63,8 @@ set termguicolors
 let g:gruvbox_italic = 1
 colorscheme gruvbox
 set guifont=JetBrains\ Mono:h15
+set printfont=JetBrains\ Mono:h8
+set printoptions=left:10mm,top:10mm,right:10mm,bottom:10mm
 " Make true color work also in tmux.
 " Those variables are filled automatically only when $TERM=xterm.
 " But in tmux, $TERM=screen so we have to set them manually.
