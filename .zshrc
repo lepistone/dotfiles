@@ -123,6 +123,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
   USR_SHARE="${BREW_PREFIX}/share"
   alias ls='ls -G'   # BSD ls understands -G
   export EDITOR=vim
+  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 else
   if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
