@@ -22,8 +22,6 @@
 	# I add a tab at the beginning to prevent the graph to break column
 	# alignment. That could be considered a bug in git.
 	onelep = %x09%h %G? %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
-[commit]
-	gpgsign = false
 [tag]
 	gpgsign = true
 [push]
@@ -39,3 +37,5 @@
 	colorMoved = dimmed-zebra
 [init]
 	defaultBranch = main
+[gpg]
+	program = gpg2
