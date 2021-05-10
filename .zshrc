@@ -20,11 +20,13 @@ GIT_PS1_SHOWUPSTREAM=(git verbose name)
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="describe"
 
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+
 # Prompt
 precmd () { __git_ps1 '
 %F{green}%m %F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
 %# '
-RPROMPT=%F{cyan}$(kubectl config current-context)%F{reset}:%F{yellow}$(kubectl config view --minify -o 'jsonpath={..namespace}')
+RPROMPT=$(kube_ps1)
 }
 
 # Aliases
