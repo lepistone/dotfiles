@@ -56,7 +56,7 @@
           - font-jetbrains-mono
           - godot
           - google-cloud-sdk
-          - gpg-tools
+          - gpg-suite
           - intellij-idea-ce
           - iterm2
           - macvim
