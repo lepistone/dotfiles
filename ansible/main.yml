@@ -43,7 +43,6 @@
           - ripgrep
           - tmux
           - tree
-          - vim
           - youtube-dl
           - zsh
           - zsh-syntax-highlighting
@@ -55,11 +54,14 @@
           - docker
           - firefox
           - font-jetbrains-mono
+          - godot
           - google-cloud-sdk
           - gpg-tools
           - intellij-idea-ce
           - iterm2
+          - macvim
           - mullvadvpn
+          - obs
           - rectangle
           - skype
           - signal
