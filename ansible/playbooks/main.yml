@@ -14,16 +14,23 @@
   tasks:
     - name: create base dir
       file:
-        path: "{{ base_dir }}"
-        state: directory
+          path: "{{ base_dir }}"
+          state: directory
+          mode: '0755'
     - name: clone dotfiles
       git:
-        repo: git@github.com:lepistone/dotfiles
-        dest: "{{ base_dir }}/dotfiles"
+          repo: git@github.com:lepistone/dotfiles
+          dest: "{{ base_dir }}/dotfiles"
+          version: main
+          update: no
+    - name: tap brew services
+      homebrew_tap:
+        name: homebrew/homebrew-services
     - name: install brew packages
       homebrew:
         name:
           - ansible
+          - ansible-lint
           - bash
           - curl
           - fd
@@ -44,6 +51,7 @@
           - ripgrep
           - tmux
           - tree
+          - vim
           - youtube-dl
           - zsh
           - zsh-syntax-highlighting
@@ -61,7 +69,6 @@
           - gpg-suite
           - intellij-idea-ce
           - iterm2
-          - macvim
           - mullvadvpn
           - obs
           - raspberry-pi-imager
