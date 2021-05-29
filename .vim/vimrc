@@ -61,7 +61,7 @@ set t_ZR=[23m
 
 set termguicolors
 let g:gruvbox_italic = 1
-colorscheme gruvbox
+colorscheme gruvbox   " i quickly tried onedark, but quickly came back to gruvbox
 set guifont=JetBrains\ Mono:h15
 set printfont=JetBrains\ Mono:h8
 set printoptions=left:10mm,top:10mm,right:10mm,bottom:10mm
