@@ -14,15 +14,15 @@
   tasks:
     - name: create base dir
       file:
-          path: "{{ base_dir }}"
-          state: directory
-          mode: '0755'
+        path: "{{ base_dir }}"
+        state: directory
+        mode: '0755'
     - name: clone dotfiles
       git:
-          repo: git@github.com:lepistone/dotfiles
-          dest: "{{ base_dir }}/dotfiles"
-          version: main
-          update: no
+        repo: git@github.com:lepistone/dotfiles
+        dest: "{{ base_dir }}/dotfiles"
+        version: main
+        update: 'no'
     - name: tap brew services
       homebrew_tap:
         name: homebrew/homebrew-services
@@ -52,6 +52,7 @@
           - tmux
           - tree
           - vim
+          - yamllint
           - youtube-dl
           - zsh
           - zsh-syntax-highlighting
