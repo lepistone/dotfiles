@@ -32,6 +32,7 @@
           - ansible
           - ansible-lint
           - bash
+          - cookiecutter
           - curl
           - fd
           - fzf
