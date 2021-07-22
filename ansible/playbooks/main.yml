@@ -36,7 +36,9 @@
           - curl
           - fd
           - fzf
+          - gh
           - git
+          - grpcurl
           - jq
           - kube-ps1
           - kubernetes-cli
@@ -52,6 +54,7 @@
           - ripgrep
           - tmux
           - tree
+          - universal-ctags
           - vim
           - yamllint
           - youtube-dl
