@@ -20,6 +20,10 @@ GIT_PS1_SHOWUPSTREAM=(git verbose name)
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="describe"
 
+# Brew
+
+HOMEBREW_INSTALL_FROM_API=1
+
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 
 # Prompt
@@ -55,7 +59,7 @@ alias kc='kubectx'
 alias kns='kubens'
 
 if [[ -x /usr/libexec/java_home ]]; then
-  alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8); java -version'
+  alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8.0); java -version'
   alias java11='export JAVA_HOME=$(/usr/libexec/java_home -F -v 11); java -version'
   alias java17='export JAVA_HOME=$(/usr/libexec/java_home -F -v 17); java -version'
 

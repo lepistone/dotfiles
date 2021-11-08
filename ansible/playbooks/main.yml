@@ -4,13 +4,6 @@
 
   vars:
     base_dir: ~/tmp/h
-    cask_packages:
-      common:
-        - pycharm-ce
-      work:
-        - intellij-idea
-        - pycharm
-
   tasks:
     - name: create base dir
       file:
@@ -61,6 +54,12 @@
           - zsh
           - zsh-syntax-highlighting
           # - zsh-completions  TODO needs setup
+      register: brew_res
+
+    - name: debug
+      ansible.builtin.debug:
+        var: brew_res
+
     - name: install cask packages
       homebrew_cask:
         name:
@@ -69,7 +68,6 @@
           - firefox
           - font-jetbrains-mono
           - godot
-          - google-backup-and-sync
           - google-cloud-sdk
           - gpg-suite
           - intellij-idea-ce
@@ -84,3 +82,8 @@
           - telegram
           - tomighty
           - vlc
+      register: cask_res
+
+    - name: debug
+      ansible.builtin.debug:
+        var: cask_res
