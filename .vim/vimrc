@@ -64,11 +64,6 @@ else
   let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 endif
 
-" These codes for italics should come automatically from termcap, but with the
-" older ncurses version included in macos, they don't work properly.
-set t_ZH=[3m
-set t_ZR=[23m
-
 set termguicolors
 let g:gruvbox_italic = 1
 colorscheme gruvbox   " i quickly tried onedark, but quickly came back to gruvbox
