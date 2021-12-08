@@ -23,8 +23,9 @@ GIT_PS1_DESCRIBE_STYLE="describe"
 # Brew
 
 HOMEBREW_INSTALL_FROM_API=1
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 
 # Prompt
 precmd () { __git_ps1 '
@@ -40,7 +41,7 @@ alias dotfiles='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias doma='docker-machine'
 alias doco='docker-compose'
 
-alias ossl='/usr/local/opt/openssl/bin/openssl'
+alias ossl='/opt/homebrew/opt/openssl/bin/openssl'
 
 alias vi='vim'
 
@@ -79,9 +80,9 @@ FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # nicer output in psql by default.
 export PAGER="less"
 export MANPAGER="less -is"
-export GIT_PAGER='/usr/local/share/git-core/contrib/diff-highlight/diff-highlight|less'
+export GIT_PAGER='/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight|less'
 
-export PGDATA=/usr/local/var/postgres   # for postgres installed with brew
+export PGDATA=/opt/homebrew/var/postgres   # for postgres installed with brew
 export CLOUDSDK_PYTHON=python3
 
 [[ -f ~/.zsh.work.sh ]] && source ~/.zsh.work.sh
@@ -90,13 +91,13 @@ export CLOUDSDK_PYTHON=python3
 # Path
 
 # prefer brewed ruby
-if [ -d /usr/local/opt/ruby/bin ]; then
-  export PATH="/usr/local/opt/ruby/bin:$PATH"
+if [ -d /opt/homebrew/opt/ruby/bin ]; then
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 fi
 
 # use brewed gems
-if [ -d /usr/local/lib/ruby/gems/3.0.0/bin ]; then
-  export PATH="/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+if [ -d /opt/homebrew/lib/ruby/gems/3.0.0/bin ]; then
+  export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
 fi
 
 if [ -d $HOME/.cargo/bin ]; then
@@ -107,7 +108,7 @@ if [ -d $HOME/go/bin ]; then
   export PATH="$PATH:$HOME/go/bin"
 fi
 
-export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Prefer Python distribution from python.org
 PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
@@ -118,18 +119,14 @@ if [[ -d $HOME/.pyenv/versions ]]; then
   done
 fi
 
-if [[ -d /usr/local/opt/python@3.8/bin ]]; then
-  export PATH="$PATH:/usr/local/opt/python@3.8/bin"
-fi
-
 if [[ $(uname -s) == 'Darwin' ]]; then
-  source /usr/local/etc/bash_completion.d/git-prompt.sh
+  source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
   alias ls='ls -G'   # BSD ls understands -G
   export EDITOR=vim
-  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+  source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+  source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 else
   if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
     source /usr/share/git-core/contrib/completion/git-prompt.sh  # fedora
@@ -146,8 +143,8 @@ fi
 
 source ${USR_SHARE}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-if [[ -d /usr/local/opt/fzf ]]; then  # brew
-  [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
+if [[ -d /opt/homebrew/opt/fzf ]]; then  # brew
+  [[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
   source "${BREW_PREFIX}/opt/fzf/shell/key-bindings.zsh"
 fi
 
