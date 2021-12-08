@@ -18,19 +18,26 @@
         update: 'no'
     - name: tap brew services
       homebrew_tap:
-        name: homebrew/homebrew-services
+        name: "{{ item }}"
+      loop:
+        - homebrew/homebrew-services
+        - homebrew/homebrew-cask-fonts
+
+
     - name: install brew packages
       homebrew:
         name:
           - ansible
           - ansible-lint
           - bash
+          - bat
           - cookiecutter
           - curl
           - fd
           - fzf
           - gh
           - git
+          - git-delta
           - grpcurl
           - jq
           - kube-ps1
@@ -63,12 +70,11 @@
       homebrew_cask:
         name:
           - 1password
+          - corretto
           - docker
           - firefox
           - font-jetbrains-mono
-          - godot
           - google-cloud-sdk
-          - gpg-suite
           - intellij-idea-ce
           - iterm2
           - mullvadvpn
