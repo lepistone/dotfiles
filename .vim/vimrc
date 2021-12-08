@@ -48,11 +48,6 @@ command! PackStatus packadd minpac  | call minpac#status()
 
 set runtimepath+=/usr/local/opt/fzf  " managed by brew istead of minpac
 
-set backup
-if has('persistent_undo')
-  set undofile
-endif
-
 if exists('$TMUX')
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -92,9 +87,18 @@ endif
 set number
 set listchars=tab:▸\ ,eol:¬,trail:⍽,space:␣
 
-set backupdir=~/tmp/vim,~/tmp,/var/tmp,/tmp
-set directory=~/tmp/vim,~/tmp,/var/tmp,/tmp
-set undodir=~/tmp/vim,~/tmp,/var/tmp,/tmp
+let mytmpdir = $HOME . "/tmp/vim"
+if !isdirectory(mytmpdir)
+    call mkdir(mytmpdir, "p", 0o700)
+endif
+let &backupdir=mytmpdir
+let &directory=mytmpdir
+let &undodir=mytmpdir
+set backup
+if has('persistent_undo')
+  set undofile
+endif
+
 
 set nofoldenable
 
