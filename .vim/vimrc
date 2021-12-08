@@ -59,6 +59,9 @@ else
   let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 endif
 
+let &t_TI = "\<Esc>[>4;2m"
+let &t_TE = "\<Esc>[>4;m"
+
 set termguicolors
 let g:gruvbox_italic = 1
 colorscheme gruvbox   " i quickly tried onedark, but quickly came back to gruvbox
