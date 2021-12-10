@@ -16,6 +16,7 @@
 	st = status -sb
 [merge]
 	tool = vimdiff
+	conflictstyle = diff3
 [pretty]
   # this looks similar to gary bernhardt's magic, without external
 	# magic.
@@ -39,3 +40,9 @@
 	defaultBranch = main
 [gpg]
 	program = gpg2
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[delta]
+	navigate = true
