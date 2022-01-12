@@ -40,6 +40,7 @@
           - git-delta
           - grpcurl
           - jq
+          - kind
           - kube-ps1
           - kubernetes-cli
           - less
@@ -85,7 +86,6 @@
           - signal
           - steam
           - telegram
-          - tomighty
           - vlc
       register: cask_res
 
