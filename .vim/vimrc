@@ -44,8 +44,6 @@ command! PackUpdate call PackInit() | call minpac#update()
 command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus packadd minpac  | call minpac#status()
 
-
-
 set runtimepath+=/opt/homebrew/opt/fzf  " managed by brew istead of minpac
 
 if exists('$TMUX')
@@ -102,25 +100,14 @@ if has('persistent_undo')
   set undofile
 endif
 
-
 set nofoldenable
 
 let mapleader=","
 
-" let g:netrw_list_hide='.pyc$'
-
 set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}-%{&fileformat}]\ 0x%B\ \ %l,%c%V\ %o\ %O\ %P
 
-autocmd BufNewFile,BufRead Vagrantfile setfiletype ruby
-autocmd BufNewFile,BufRead *.t setfiletype cram
-
-autocmd FileType ruby nnoremap <leader>b Orequire "pry" ; binding.pry<esc>
-
-autocmd FileType go nmap <leader>r <Plug>(go-run)
-" autocmd FileType mail setlocal formatoptions+=aw
-" nah, unfortunately gmail stopped supporting format=flowed kind of right now.
-
 nnoremap <C-p> :<C-u>FZF<CR>
+
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
@@ -130,15 +117,3 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {
   \   '*': ['trim_whitespace', 'remove_trailing_lines']
   \}
-
-let g:rust_conceal = 1
-let g:rust_conceal_pub = 1
-let g:rust_fold = 2
-
-" let g:racer_experimental_completer = 1
-" let g:racer_insert_paren = 1
-au FileType rust nmap gd <Plug>(rust-def)
-au FileType rust nmap gs <Plug>(rust-def-split)
-au FileType rust nmap gx <Plug>(rust-def-vertical)
-au FileType rust nmap gt <Plug>(rust-def-tab)
-au FileType rust nmap <leader>gd <Plug>(rust-doc)
