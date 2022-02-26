@@ -9,6 +9,7 @@ function! PackInit() abort
   call minpac#add('cespare/vim-toml')
   call minpac#add('chr4/nginx.vim')
   call minpac#add('dense-analysis/ale')
+  call minpac#add('guns/vim-sexp')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('junegunn/goyo.vim')
   call minpac#add('junegunn/limelight.vim')
@@ -35,8 +36,11 @@ function! PackInit() abort
   call minpac#add('tpope/vim-salve')
   call minpac#add('tpope/vim-scriptease')
   call minpac#add('tpope/vim-sensible')
+  call minpac#add('tpope/vim-sexp-mappings-for-regular-people')
+  call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-vinegar')
+  call minpac#add('venantius/vim-cljfmt')
   call minpac#add('vim-ruby/vim-ruby')
 endfunction
 
