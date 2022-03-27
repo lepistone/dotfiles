@@ -104,7 +104,7 @@ set nofoldenable
 
 let mapleader=","
 
-set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}-%{&fileformat}]\ 0x%B\ \ %l,%c%V\ %o\ %O\ %P
+set statusline=%<%f\ %y%w%q%m%r\ %k%=[%{&fileencoding}\ %{&fileformat}]\ 0x%B\ \ %l,%c%V\ %o\ %O\ %P
 
 nnoremap <C-p> :<C-u>FZF<CR>
 
