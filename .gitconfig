@@ -38,8 +38,6 @@
 	colorMoved = dimmed-zebra
 [init]
 	defaultBranch = main
-[gpg]
-	program = gpg2
 [core]
 	pager = delta
 [interactive]
