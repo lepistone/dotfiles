@@ -62,6 +62,7 @@ if [[ -x /usr/libexec/java_home ]]; then
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8.0); java -version'
   alias java11='export JAVA_HOME=$(/usr/libexec/java_home -F -v 11); java -version'
   alias java17='export JAVA_HOME=$(/usr/libexec/java_home -F -v 17); java -version'
+  alias java18='export JAVA_HOME=$(/usr/libexec/java_home -F -v 18); java -version'
 
   alias jah='/usr/libexec/java_home'
 
@@ -96,8 +97,8 @@ if [ -d /opt/homebrew/opt/ruby/bin ]; then
 fi
 
 # use brewed gems
-if [ -d /opt/homebrew/lib/ruby/gems/3.0.0/bin ]; then
-  export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
+if [ -d /opt/homebrew/lib/ruby/gems/3.1.0/bin ]; then
+  export PATH="/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
 fi
 
 if [ -d $HOME/.cargo/bin ]; then
