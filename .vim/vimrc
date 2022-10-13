@@ -105,6 +105,7 @@ if has('persistent_undo')
 endif
 
 set nofoldenable
+set wildoptions=pum
 
 let mapleader=","
 
