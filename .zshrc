@@ -63,10 +63,11 @@ if [[ -x /usr/libexec/java_home ]]; then
   alias java11='export JAVA_HOME=$(/usr/libexec/java_home -F -v 11); java -version'
   alias java17='export JAVA_HOME=$(/usr/libexec/java_home -F -v 17); java -version'
   alias java18='export JAVA_HOME=$(/usr/libexec/java_home -F -v 18); java -version'
+  alias java19='export JAVA_HOME=$(/usr/libexec/java_home -F -v 19); java -version'
 
   alias jah='/usr/libexec/java_home'
 
-  export JAVA_HOME=$(/usr/libexec/java_home -F -v 11)
+  export JAVA_HOME=$(/usr/libexec/java_home -F -v 17)
 fi
 export MAVEN_OPTS='-XX:TieredStopAtLevel=1'
 
@@ -149,5 +150,10 @@ fi
 if [[ -d /usr/share/fzf/shell ]]; then  # fedora
   source /usr/share/fzf/shell/key-bindings.zsh
 fi
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 unset BREW_PREFIX USR_SHARE
