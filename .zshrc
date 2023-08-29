@@ -109,6 +109,10 @@ if [ -d $HOME/go/bin ]; then
   export PATH="$PATH:$HOME/go/bin"
 fi
 
+if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
+  export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
+fi
+
 export PATH="$HOME/.local/bin:$PATH"
 
 if [[ -d $HOME/.pyenv/versions ]]; then
