@@ -62,8 +62,7 @@ if [[ -x /usr/libexec/java_home ]]; then
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8.0); java -version'
   alias java11='export JAVA_HOME=$(/usr/libexec/java_home -F -v 11); java -version'
   alias java17='export JAVA_HOME=$(/usr/libexec/java_home -F -v 17); java -version'
-  alias java18='export JAVA_HOME=$(/usr/libexec/java_home -F -v 18); java -version'
-  alias java19='export JAVA_HOME=$(/usr/libexec/java_home -F -v 19); java -version'
+  alias java20='export JAVA_HOME=$(/usr/libexec/java_home -F -v 20); java -version'
 
   alias jah='/usr/libexec/java_home'
 
