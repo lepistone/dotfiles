@@ -65,8 +65,14 @@ let &t_TI = "\<Esc>[>4;2m"
 let &t_TE = "\<Esc>[>4;m"
 
 set termguicolors
-let g:gruvbox_italic = 1
-colorscheme gruvbox   " i quickly tried onedark, but quickly came back to gruvbox
+
+try
+  colorscheme retrobox " introduced in vim 9.0.1817
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme slate " available since at least vim 7.0
+endtry
+
+
 set guifont=JetBrains\ Mono:h15
 set printfont=JetBrains\ Mono:h8
 set printoptions=left:10mm,top:10mm,right:10mm,bottom:10mm
