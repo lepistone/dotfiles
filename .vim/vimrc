@@ -1,53 +1,5 @@
 source $VIMRUNTIME/defaults.vim
 
-function! PackInit() abort
-  packadd minpac
-
-  call minpac#init()
-  " call minpac#add('fatih/vim-go', {'rev': 'v*'})
-  call minpac#add('ElmCast/elm-vim')
-  call minpac#add('cespare/vim-toml')
-  call minpac#add('chr4/nginx.vim')
-  call minpac#add('dense-analysis/ale')
-  call minpac#add('guns/vim-sexp')
-  call minpac#add('junegunn/fzf.vim')
-  call minpac#add('junegunn/goyo.vim')
-  call minpac#add('junegunn/limelight.vim')
-  call minpac#add('k-takata/minpac', {'type': 'opt'})
-  call minpac#add('lepture/vim-jinja')
-  call minpac#add('majutsushi/tagbar')
-  call minpac#add('morhetz/gruvbox', {'type': 'opt'})
-  call minpac#add('pearofducks/ansible-vim')
-  call minpac#add('racer-rust/vim-racer')
-  call minpac#add('rodjek/vim-puppet')
-  call minpac#add('rust-lang/rust.vim')
-  call minpac#add('supercollider/scvim')
-  call minpac#add('tmux-plugins/vim-tmux')
-  call minpac#add('tpope/vim-classpath')
-  call minpac#add('tpope/vim-commentary')
-  call minpac#add('tpope/vim-dadbod')
-  call minpac#add('tpope/vim-dispatch')
-  call minpac#add('tpope/vim-eunuch')
-  call minpac#add('tpope/vim-fireplace')
-  call minpac#add('tpope/vim-fugitive')
-  call minpac#add('tpope/vim-projectionist')
-  call minpac#add('tpope/vim-repeat')
-  call minpac#add('tpope/vim-rhubarb')
-  call minpac#add('tpope/vim-salve')
-  call minpac#add('tpope/vim-scriptease')
-  call minpac#add('tpope/vim-sensible')
-  call minpac#add('tpope/vim-sexp-mappings-for-regular-people')
-  call minpac#add('tpope/vim-surround')
-  call minpac#add('tpope/vim-unimpaired')
-  call minpac#add('tpope/vim-vinegar')
-  call minpac#add('venantius/vim-cljfmt')
-  call minpac#add('vim-ruby/vim-ruby')
-endfunction
-
-command! PackUpdate call PackInit() | call minpac#update()
-command! PackClean  call PackInit() | call minpac#clean()
-command! PackStatus packadd minpac  | call minpac#status()
-
 set runtimepath+=/opt/homebrew/opt/fzf  " managed by brew istead of minpac
 
 if exists('$TMUX')
