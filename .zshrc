@@ -66,7 +66,7 @@ if [[ -x /usr/libexec/java_home ]]; then
 
   alias jah='/usr/libexec/java_home'
 
-  export JAVA_HOME=$(/usr/libexec/java_home -F -v 21)
+  export JAVA_HOME=$(/usr/libexec/java_home -F -v 17)
 fi
 export MAVEN_OPTS='-XX:TieredStopAtLevel=1'
 
