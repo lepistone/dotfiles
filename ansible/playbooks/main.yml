@@ -91,3 +91,36 @@
     - name: debug
       ansible.builtin.debug:
         var: cask_res
+
+    - name: vim plugins
+      git:
+        repo: git@github.com:{{ item[0] }}/{{ item[1] }}
+        dest: ~/dotfiles/.vim/pack/ansible/start/{{ item[1] }}
+      loop:
+        - [ pearofducks, ansible-vim ]
+        - [ tmux-plugins, vim-tmux ]
+        - [ tpope, vim-characterize ]
+        - [ tpope, vim-commentary ]
+        - [ tpope, vim-dispatch ]
+        - [ tpope, vim-dotenv ]
+        - [ tpope, vim-endwise ]
+        - [ tpope, vim-eunuch ]
+        - [ tpope, vim-fireplace ]
+        - [ tpope, vim-flagship ]
+        - [ tpope, vim-fugitive ]
+        - [ tpope, vim-jdaddy ]
+        - [ tpope, vim-ragtag ]
+        - [ tpope, vim-rhubarb ]
+        - [ tpope, vim-salve ]
+        - [ tpope, vim-scriptease ]
+        - [ tpope, vim-sensible ]
+        - [ tpope, vim-sleuth ]
+        - [ tpope, vim-speeddating ]
+        - [ tpope, vim-tbone ]
+        - [ tpope, vim-vinegar ]
+        - [ tpope, vim-classpath ]
+        - [ tpope, vim-projectionist ]
+        - [ tpope, vim-apathy ]
+        - [ tpope, vim-afterimage ]
+      tags:
+        - vim
