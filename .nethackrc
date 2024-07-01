@@ -1,13 +1,81 @@
 OPTIONS=color
-OPTIONS=pickup_types:$
 
-#OPTIONS=decgraphics
+OPTIONS=autopickup
+
+# Ask first if an item would exceed a burden level (default stressed):
+# (Unencumbered, Burdened, streSsed, straiNed, Overtaxed, or overLoaded)
+OPTIONS=pickup_burden:unencumbered
+
+# Note: pickup_types is only consulted if no EXCEPTION matches.
+OPTIONS=pickup_types:$?!/(="+
+
+# Always pick these:
+AUTOPICKUP_EXCEPTION="<magic lamp"
+AUTOPICKUP_EXCEPTION="<wand of wishing"
+AUTOPICKUP_EXCEPTION="<wand of death"
+AUTOPICKUP_EXCEPTION="<wand of polymorph"
+# Don't pick these:
+AUTOPICKUP_EXCEPTION=">worthless piece of"
+AUTOPICKUP_EXCEPTION=">load stone"
+AUTOPICKUP_EXCEPTION=">flint stone"
+
 OPTIONS=windowtype:curses
 
 OPTIONS=extmenu
+OPTIONS=force_invmenu
 OPTIONS=rawio
 OPTIONS=showexp
 OPTIONS=standout
 OPTIONS=time
 OPTIONS=hilite_pet
+OPTIONS=hilite_pile
 OPTIONS=msg_window:full
+OPTIONS=paranoid_confirmation:Confirm quit attack pray wand Remove
+
+## Use status hilites                                                        
+#                                               
+OPTIONS=statushilites                                            
+# HP                                                       
+OPTIONS=hitpointbar                               
+OPTIONS=hilite_status:hitpoints/100%/grey&normal    
+OPTIONS=hilite_status:hitpoints/<100%/green&normal
+OPTIONS=hilite_status:hitpoints/<66%/yellow&normal
+OPTIONS=hilite_status:hitpoints/<50%/orange&normal
+OPTIONS=hilite_status:hitpoints/<33%/red&bold     
+OPTIONS=hilite_status:hitpoints/<15%/red&inverse                  
+## Pw                                             
+OPTIONS=hilite_status:power/100%/grey&normal      
+OPTIONS=hilite_status:power/<100%/green&normal         
+OPTIONS=hilite_status:power/<66%/yellow&normal    
+OPTIONS=hilite_status:power/<50%/orange&normal                                                  
+OPTIONS=hilite_status:power/<33%/red&bold                                                       
+## Carry                                                                                        
+OPTIONS=hilite_status:cap/burdened/yellow/stressed/orange/strained/red&bold/overtaxed/red&invers
+## Hunger                                                                                       
+OPTIONS=hilite_status:hunger/satiated/yellow/hungry/orange/weak/red&bold/fainting/red&inverse/fa
+## Mental                                                                                       
+OPTIONS=hilite_status:condition/hallu/yellow                                                    
+OPTIONS=hilite_status:condition/conf/orange                                                     
+OPTIONS=hilite_status:condition/stun/red&bold                                                   
+## Health                                                                                       
+OPTIONS=hilite_status:condition/termill/red&inverse                                             
+OPTIONS=hilite_status:condition/foodpois/red&inverse                                            
+OPTIONS=hilite_status:condition/slime/red&inverse                                               
+# Str, Con, Dex, Int, Wis, Cha                                                                  
+OPTIONS=hilite_status:characteristics/up/green/down/red                                         
+# gold                                                                                          
+OPTIONS=hilite_status: gold/up/yellow/down/brown                                                
+
+
+OPTIONS=menucolors                                                                              
+MENUCOLOR=" blessed "=green                                                                     
+MENUCOLOR=" holy "=green                                                                        
+MENUCOLOR=" cursed "=red                                                                        
+MENUCOLOR=" unholy "=red                                                                        
+MENUCOLOR=" cursed .* (being worn)"=orange&underline                                            
+
+OPTIONS=boulder:0
+
+OPTIONS=dark_room
+OPTIONS=lit_corridor
+OPTIONS=perm_invent
