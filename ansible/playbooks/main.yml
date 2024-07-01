@@ -40,13 +40,11 @@
           - git-delta
           - grpcurl
           - jq
-          - kind
           - kube-ps1
           - kubernetes-cli
           - less
           - maven
           - mosh
-          - nethack
           - openssh
           - openssl
           - pstree
@@ -55,9 +53,7 @@
           - tmux
           - tree
           - universal-ctags
-          - vim
           - yamllint
-          - youtube-dl
           - zsh
           - zsh-syntax-highlighting
           # - zsh-completions  TODO needs setup
@@ -76,7 +72,7 @@
           - firefox
           - font-jetbrains-mono
           - google-cloud-sdk
-          - intellij-idea-ce
+          - intellij-idea
           - iterm2
           - obs
           - raspberry-pi-imager
