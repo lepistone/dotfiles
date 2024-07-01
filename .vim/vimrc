@@ -81,3 +81,5 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {
   \   '*': ['trim_whitespace', 'remove_trailing_lines']
   \}
+
+let g:copilot_node_command = "/opt/homebrew/opt/node/bin/node"

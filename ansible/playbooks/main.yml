@@ -97,6 +97,7 @@
         repo: git@github.com:{{ item[0] }}/{{ item[1] }}
         dest: ~/dotfiles/.vim/pack/ansible/start/{{ item[1] }}
       loop:
+        - [ github, copilot.vim ]
         - [ pearofducks, ansible-vim ]
         - [ tmux-plugins, vim-tmux ]
         - [ tpope, vim-characterize ]
