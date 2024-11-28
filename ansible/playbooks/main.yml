@@ -21,7 +21,6 @@
         name: "{{ item }}"
       loop:
         - homebrew/homebrew-services
-        - homebrew/homebrew-cask-fonts
 
 
     - name: install brew packages
