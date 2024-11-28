@@ -57,18 +57,6 @@ alias ssh='TERM=screen-256color ssh'
 alias k='kubectl'
 alias kc='kubectx'
 alias kns='kubens'
-
-if [[ -x /usr/libexec/java_home ]]; then
-  alias java8='export JAVA_HOME=$(/usr/libexec/java_home -F -v 1.8.0); java -version'
-  alias java11='export JAVA_HOME=$(/usr/libexec/java_home -F -v 11); java -version'
-  alias java17='export JAVA_HOME=$(/usr/libexec/java_home -F -v 17); java -version'
-  alias java21='export JAVA_HOME=$(/usr/libexec/java_home -F -v 21); java -version'
-  alias java22='export JAVA_HOME=$(/usr/libexec/java_home -F -v 22); java -version'
-
-  alias jah='/usr/libexec/java_home'
-
-  export JAVA_HOME=$(/usr/libexec/java_home -F -v 21)
-fi
 export MAVEN_OPTS='-XX:TieredStopAtLevel=1'
 
 # Environment variables
