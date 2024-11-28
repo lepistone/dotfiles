@@ -16,6 +16,35 @@
         dest: "{{ base_dir }}/dotfiles"
         version: main
         update: 'no'
+    - name: link dotfiles
+      tags: link-dotfiles
+      ansible.builtin.file:
+        src: "$HOME/dotfiles/{{ item }}"
+        dest: "$HOME/{{ item }}"
+        state: link
+      loop:
+        - .ansible.cfg
+        - .bash_profile
+        - .bashrc
+        - .config
+        - .ghci
+        - .gitconfig
+        - .hgrc
+        - .inputrc
+        - .irbrc
+        - .mpd
+        - .my.cnf
+        - .nethackrc
+        - .pdbrc.py
+        - .psqlrc
+        - .pystartup
+        - .tmux.conf
+        - .vim
+        - .weechat
+        - .zlogin
+        - .zprofile
+        - .zshenv
+        - .zshrc
     - name: tap brew services
       homebrew_tap:
         name: "{{ item }}"
