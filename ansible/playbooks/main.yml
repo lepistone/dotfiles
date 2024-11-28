@@ -52,9 +52,11 @@
           - tmux
           - tree
           - universal-ctags
+          - vim
           - yamllint
           - zsh
           - zsh-syntax-highlighting
+          - zsh-autosuggestions
           # - zsh-completions  TODO needs setup
       register: brew_res
 
@@ -65,8 +67,6 @@
     - name: install cask packages
       homebrew_cask:
         name:
-          - 1password
-          - corretto
           - docker
           - firefox
           - font-jetbrains-mono
@@ -74,8 +74,8 @@
           - intellij-idea
           - iterm2
           - obs
+          - obsidian
           - raspberry-pi-imager
-          - rectangle
           - skype
           - signal
           - steam
