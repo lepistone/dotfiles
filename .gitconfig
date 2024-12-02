@@ -1,6 +1,7 @@
 [user]
 	name = Leonardo Pistone
 	useconfigonly = true
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPmIUd8FCwVygeE7WyYJt5CVDJXq//TyXjOCUGqUvv1c
 [alias]
 	l = log --pretty=onelep --graph
 	la = log --pretty=onelep --graph --all
@@ -49,7 +50,11 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-; [commit]
-; 	gpgsign = true
 [push]
 	autoSetupRemote = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
