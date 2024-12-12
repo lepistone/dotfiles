@@ -59,6 +59,7 @@
           - ansible-lint
           - bash
           - bat
+          - bazelisk
           - cookiecutter
           - curl
           - fd
@@ -70,20 +71,19 @@
           - jq
           - kube-ps1
           - kubectx
-          - kubernetes-cli
           - less
-          - maven
           - mosh
           - openssh
           - openssl
+          - pipx
           - pstree
-          - python
           - ripgrep
           - tmux
           - tree
           - universal-ctags
           - vim
           - yamllint
+          - yq
           - zsh
           - zsh-autosuggestions
           - zsh-syntax-highlighting
@@ -106,10 +106,11 @@
           - obs
           - obsidian
           - raspberry-pi-imager
+          - rectangle
           - skype
           - signal
           - steam
-          - telegram
+          - tuple
           - vlc
       register: cask_res
 
