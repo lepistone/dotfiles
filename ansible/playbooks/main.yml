@@ -67,6 +67,8 @@
           - gh
           - git
           - git-delta
+          - git-lfs
+          - go
           - grpcurl
           - jq
           - kube-ps1
@@ -76,11 +78,14 @@
           - openssh
           - openssl
           - pipx
+          - pre-commit
           - pstree
           - ripgrep
+          - starship
           - tmux
           - tree
           - universal-ctags
+          - velero
           - vim
           - yamllint
           - yq
