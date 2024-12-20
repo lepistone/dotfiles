@@ -60,6 +60,7 @@
           - bash
           - bat
           - bazelisk
+          - buildifier
           - cookiecutter
           - curl
           - fd
