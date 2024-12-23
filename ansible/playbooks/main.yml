@@ -57,12 +57,18 @@
         name:
           - ansible
           - ansible-lint
+          - aspell
+          - autoconf
           - bash
           - bat
           - bazelisk
           - buildifier
+          - clang-format
           - cookiecutter
+          - coredns
+          - coreutils
           - curl
+          - envoy
           - fd
           - fzf
           - gh
@@ -75,6 +81,7 @@
           - kube-ps1
           - kubectx
           - less
+          - libtool
           - mosh
           - openssh
           - openssl
@@ -87,6 +94,7 @@
           - tree
           - universal-ctags
           - velero
+          - wget
           - vim
           - yamllint
           - yq
@@ -106,6 +114,7 @@
           - docker
           - firefox
           - font-jetbrains-mono
+          - gpg-suite
           - google-cloud-sdk
           - intellij-idea
           - iterm2
