@@ -37,7 +37,6 @@
         - .nethackrc
         - .pdbrc.py
         - .psqlrc
-        - .pystartup
         - .tmux.conf
         - .vim
         - .weechat
