@@ -28,11 +28,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 
 # Prompt
-precmd () { __git_ps1 '
-%F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
-%# '
-RPROMPT=$(kube_ps1)
-}
+# precmd () { __git_ps1 '
+# %F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
+# %# '
+# RPROMPT=$(kube_ps1)
+# }
 
 # Aliases
 alias grep='grep --color=auto'
@@ -111,12 +111,12 @@ if [[ -d $HOME/.pyenv/versions ]]; then
 fi
 
 if [[ $(uname -s) == 'Darwin' ]]; then
-  source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
+  # source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
   alias ls='ls -G'   # BSD ls understands -G
   export EDITOR=vim
-  source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+  # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
   source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 else
   if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
@@ -158,3 +158,5 @@ unset BREW_PREFIX USR_SHARE
 # https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Accessing-On_002dLine-Help
 unalias run-help   # alias to man
 autoload run-help  # also helps with builtins
+
+eval "$(starship init zsh)"
