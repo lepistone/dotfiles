@@ -44,18 +44,18 @@
         - .zprofile
         - .zshenv
         - .zshrc
-    - name: tap brew services
+    - name: brew taps
       homebrew_tap:
         name: "{{ item }}"
       loop:
         - homebrew/homebrew-services
-
 
     - name: install brew packages
       homebrew:
         name:
           - ansible
           - ansible-lint
+          - argocd
           - aspell
           - autoconf
           - bash
