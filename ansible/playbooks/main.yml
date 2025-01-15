@@ -89,11 +89,13 @@
           - pstree
           - ripgrep
           - starship
+          - tfenv
           - tmux
           - tree
           - universal-ctags
           - velero
           - wget
+          - velero
           - vim
           - yamllint
           - yq
