@@ -49,6 +49,7 @@
         name: "{{ item }}"
       loop:
         - homebrew/homebrew-services
+        - argoproj/tap
 
     - name: install brew packages
       homebrew:
@@ -56,6 +57,7 @@
           - ansible
           - ansible-lint
           - argocd
+          - argoproj/tap/kubectl-argo-rollouts
           - aspell
           - autoconf
           - bash
@@ -79,6 +81,7 @@
           - jq
           - kube-ps1
           - kubectx
+          - kustomize
           - less
           - libtool
           - mosh
