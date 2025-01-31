@@ -101,6 +101,10 @@ if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
   export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
 fi
 
+if [ -d "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin" ]; then
+  export PATH="$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
+fi
+
 export PATH="$HOME/.local/bin:$PATH"
 
 if [[ -d $HOME/.pyenv/versions ]]; then
