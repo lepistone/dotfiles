@@ -25,14 +25,13 @@ GIT_PS1_DESCRIBE_STYLE="describe"
 HOMEBREW_INSTALL_FROM_API=1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
-
 # Prompt
-# precmd () { __git_ps1 '
-# %F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
-# %# '
-# RPROMPT=$(kube_ps1)
-# }
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+precmd () { __git_ps1 '
+%F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
+%# '
+RPROMPT=$(kube_ps1)
+}
 
 # Aliases
 alias grep='grep --color=auto'
@@ -40,20 +39,13 @@ alias g='git'
 alias dotfiles='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias doma='docker-machine'
 alias doco='docker-compose'
-
 alias ossl='/opt/homebrew/opt/openssl/bin/openssl'
-
 alias vi='vim'
-
 alias an='ansible'
 alias anp='ansible-playbook'
-
 alias bse='brew services'
-
 alias npm0='npm ls --depth=0'
-
 alias ssh='TERM=screen-256color ssh'
-
 alias k='kubectl'
 alias kc='kubectx'
 alias kns='kubens'
@@ -101,10 +93,6 @@ if [ -d "/Applications/IntelliJ IDEA.app/Contents/MacOS" ]; then
   export PATH="$PATH:/Applications/IntelliJ IDEA.app/Contents/MacOS"
 fi
 
-if [ -d "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin" ]; then
-  export PATH="$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
-fi
-
 export PATH="$HOME/.local/bin:$PATH"
 
 if [[ -d $HOME/.pyenv/versions ]]; then
@@ -114,12 +102,12 @@ if [[ -d $HOME/.pyenv/versions ]]; then
 fi
 
 if [[ $(uname -s) == 'Darwin' ]]; then
-  # source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
+  source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
   alias ls='ls -G'   # BSD ls understands -G
   export EDITOR=vim
-  # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+  source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
   source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 else
   if [[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
@@ -146,11 +134,6 @@ if [[ -d /usr/share/fzf/shell ]]; then  # fedora
   source /usr/share/fzf/shell/key-bindings.zsh
 fi
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -162,4 +145,6 @@ unset BREW_PREFIX USR_SHARE
 unalias run-help   # alias to man
 autoload run-help  # also helps with builtins
 
-eval "$(starship init zsh)"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
