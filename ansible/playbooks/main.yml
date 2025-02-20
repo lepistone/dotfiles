@@ -54,6 +54,7 @@
     - name: install brew packages
       homebrew:
         name:
+          - 1password-cli
           - ansible
           - ansible-lint
           - argocd
@@ -79,6 +80,7 @@
           - go
           - grpcurl
           - jq
+          - kind
           - kube-ps1
           - kubectx
           - kustomize
