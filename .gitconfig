@@ -23,7 +23,7 @@
 	# magic.
 	# I add a tab at the beginning to prevent the graph to break column
 	# alignment. That could be considered a bug in git.
-	onelep = %x09%h %G? %Cgreen%<(20,trunc)%ar %Cblue%<(20,trunc)%an %Cred%d%Creset %s
+	onelep = %x09%h %G? %Cgreen%<(20,trunc)%ah %Cblue%<(20,trunc)%an %Cred%d%Creset %s
 [tag]
 	gpgsign = true
 [hub]
