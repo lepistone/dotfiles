@@ -93,6 +93,7 @@
           - pipx
           - pre-commit
           - pstree
+          - python@3.12
           - ripgrep
           - starship
           - tfenv
@@ -128,6 +129,7 @@
           - iterm2
           - obs
           - obsidian
+          - pycharm
           - raspberry-pi-imager
           - rectangle
           - skype
@@ -136,6 +138,8 @@
           - tuple
           - vlc
       register: cask_res
+      tags:
+        - cask
 
     - name: debug
       ansible.builtin.debug:
