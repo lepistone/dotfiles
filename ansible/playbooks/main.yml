@@ -79,6 +79,7 @@
           - git-lfs
           - go
           - grpcurl
+          - helm
           - jq
           - kind
           - kube-ps1
@@ -96,6 +97,7 @@
           - starship
           - tfenv
           - tmux
+          - tox
           - tree
           - universal-ctags
           - velero

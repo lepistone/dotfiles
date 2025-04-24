@@ -8,7 +8,6 @@ fi
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
-autoload -Uz compinit && compinit
 bindkey -e
 setopt PROMPT_SUBST
 
@@ -64,7 +63,6 @@ export MANPAGER="less -is"
 export GIT_PAGER='/opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight|less'
 
 export PGDATA=/opt/homebrew/var/postgres   # for postgres installed with brew
-export CLOUDSDK_PYTHON=python3
 
 [[ -f ~/.zsh.work.sh ]] && source ~/.zsh.work.sh
 [[ -f ~/.secrets.sh ]] && source ~/.secrets.sh
@@ -144,6 +142,11 @@ unset BREW_PREFIX USR_SHARE
 # https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Accessing-On_002dLine-Help
 unalias run-help   # alias to man
 autoload run-help  # also helps with builtins
+
+# This way the completion script does not have to parse Bazel's options
+# repeatedly.  The directory in cache-path must be created manually.
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
