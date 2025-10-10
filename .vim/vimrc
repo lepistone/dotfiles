@@ -1,3 +1,5 @@
+if has('nvim') | finish | endif
+
 source $VIMRUNTIME/defaults.vim
 
 set runtimepath+=/opt/homebrew/opt/fzf  " managed by brew istead of minpac
