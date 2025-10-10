@@ -45,13 +45,17 @@
         - .zshenv
         - .zshrc
     - name: brew taps
+      tags:
+        - tap
       homebrew_tap:
         name: "{{ item }}"
       loop:
         - homebrew/homebrew-services
         - argoproj/tap
+        - flyteorg/homebrew-tap
 
     - name: install brew packages
+      tags: brew
       homebrew:
         name:
           - 1password-cli
@@ -66,6 +70,7 @@
           - bazelisk
           - buildifier
           - clang-format
+          - composer
           - cookiecutter
           - coredns
           - coreutils
@@ -81,28 +86,33 @@
           - grpcurl
           - helm
           - jq
+          - julia
           - kind
           - kube-ps1
           - kubectx
           - kustomize
           - less
           - libtool
+          - luarocks
           - mosh
+          - neovim
           - openssh
           - openssl
+          - php
           - pipx
           - pre-commit
           - pstree
           - python@3.12
           - ripgrep
+          - rust
           - starship
           - tfenv
           - tmux
-          - tox
           - tree
           - universal-ctags
           - velero
           - wget
+          - uv
           - velero
           - vim
           - yamllint
@@ -110,6 +120,7 @@
           - zsh
           - zsh-autosuggestions
           - zsh-syntax-highlighting
+          - flytectl
           # - zsh-completions  TODO needs setup
       register: brew_res
 
