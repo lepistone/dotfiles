@@ -48,6 +48,10 @@ alias ssh='TERM=screen-256color ssh'
 alias k='kubectl'
 alias kc='kubectx'
 alias kns='kubens'
+alias unwrap='perl -0777 -pe '\''s/(?<!\n)\n(?!\n)/ /g'\'
+alias update-pr='gh pr edit --title "$(git log -1 --pretty=%s)" --body-file <(git log -1 --pretty=%b | unwrap)'
+alias nv='nvim'
+alias gh-fork='gh repo fork --remote --remote-name $USER'
 export MAVEN_OPTS='-XX:TieredStopAtLevel=1'
 
 # Environment variables
