@@ -108,7 +108,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
   BREW_PREFIX="$(brew --prefix)"
   USR_SHARE="${BREW_PREFIX}/share"
   alias ls='ls -G'   # BSD ls understands -G
-  export EDITOR=vim
+  export EDITOR=nvim
   source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
   source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 else
