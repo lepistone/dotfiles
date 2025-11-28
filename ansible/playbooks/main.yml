@@ -19,8 +19,8 @@
     - name: link dotfiles
       tags: link-dotfiles
       ansible.builtin.file:
-        src: "$HOME/dotfiles/{{ item }}"
-        dest: "$HOME/{{ item }}"
+        src: "{{ ansible_env.HOME }}/dotfiles/{{ item }}"
+        dest: "{{ ansible_env.HOME }}/{{ item }}"
         state: link
       loop:
         - .ansible.cfg
@@ -50,13 +50,13 @@
       homebrew_tap:
         name: "{{ item }}"
       loop:
-        - homebrew/homebrew-services
         - argoproj/tap
         - flyteorg/homebrew-tap
 
     - name: install brew packages
       tags: brew
       homebrew:
+        update_homebrew: no
         name:
           - 1password-cli
           - ansible
@@ -67,6 +67,7 @@
           - autoconf
           - bash
           - bat
+          - bats-core
           - bazelisk
           - buildifier
           - clang-format
@@ -113,7 +114,6 @@
           - velero
           - wget
           - uv
-          - velero
           - vim
           - yamllint
           - yq
@@ -127,6 +127,7 @@
     - name: debug
       ansible.builtin.debug:
         var: brew_res
+        verbosity: 1
 
     - name: install cask packages
       homebrew_cask:
@@ -134,8 +135,9 @@
           - docker
           - firefox
           - font-jetbrains-mono
-          - gpg-suite
+          - ghostty
           - google-cloud-sdk
+          - gpg-suite
           - intellij-idea
           - iterm2
           - obs
@@ -154,11 +156,13 @@
     - name: debug
       ansible.builtin.debug:
         var: cask_res
+        verbosity: 1
 
     - name: vim plugins
       git:
         repo: git@github.com:{{ item[0] }}/{{ item[1] }}
         dest: ~/dotfiles/.vim/pack/ansible/start/{{ item[1] }}
+        update: no
       loop:
         - [ github, copilot.vim ]
         - [ pearofducks, ansible-vim ]
