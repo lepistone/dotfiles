@@ -19,8 +19,8 @@
     - name: link dotfiles
       tags: link-dotfiles
       ansible.builtin.file:
-        src: "{{ ansible_env.HOME }}/dotfiles/{{ item }}"
-        dest: "{{ ansible_env.HOME }}/{{ item }}"
+        src: "{{ ansible_facts['user_dir'] }}/dotfiles/{{ item }}"
+        dest: "{{ ansible_facts['user_dir'] }}/{{ item }}"
         state: link
       loop:
         - .ansible.cfg
