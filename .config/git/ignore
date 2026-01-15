@@ -3,3 +3,5 @@
 .netrwhist
 .DS_Store
 *.iml
+
+**/.claude/settings.local.json

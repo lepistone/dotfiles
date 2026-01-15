@@ -3,23 +3,18 @@
   hosts: localhost
 
   vars:
-    base_dir: ~/tmp/h
+    dotfiles_dir: "{{ ansible_facts['user_dir'] }}/dotfiles"
   tasks:
-    - name: create base dir
-      file:
-        path: "{{ base_dir }}"
-        state: directory
-        mode: '0755'
     - name: clone dotfiles
       git:
         repo: git@github.com:lepistone/dotfiles
-        dest: "{{ base_dir }}/dotfiles"
+        dest: "{{ dotfiles_dir }}"
         version: main
-        update: 'no'
+        update: no
     - name: link dotfiles
       tags: link-dotfiles
       ansible.builtin.file:
-        src: "{{ ansible_facts['user_dir'] }}/dotfiles/{{ item }}"
+        src: "{{ dotfiles_dir }}/{{ item }}"
         dest: "{{ ansible_facts['user_dir'] }}/{{ item }}"
         state: link
       loop:
@@ -107,6 +102,7 @@
           - ripgrep
           - rust
           - starship
+          - step
           - tfenv
           - tmux
           - tree
@@ -161,7 +157,7 @@
     - name: vim plugins
       git:
         repo: git@github.com:{{ item[0] }}/{{ item[1] }}
-        dest: ~/dotfiles/.vim/pack/ansible/start/{{ item[1] }}
+        dest: "{{ dotfiles_dir }}/.vim/pack/ansible/start/{{ item[1] }}"
         update: no
       loop:
         - [ github, copilot.vim ]
