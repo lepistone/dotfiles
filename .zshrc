@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Debugging
 if [[ -e ~/.debug_dotfiles ]]; then
   echo -n "${(%):-%N} "
@@ -14,23 +16,26 @@ setopt PROMPT_SUBST
 # Git
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
-GIT_PS1_SHOWUNTRACKEDFILES=1
+# GIT_PS1_SHOWUNTRACKEDFILES=1   # disabled for performance
 GIT_PS1_SHOWUPSTREAM=(git verbose name)
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_DESCRIBE_STYLE="describe"
 
 # Brew
-
 HOMEBREW_INSTALL_FROM_API=1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+autoload -Uz promptinit
+promptinit
+
 # Prompt
-source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+#
+# source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 precmd () { __git_ps1 '
 %F{yellow}%~%f%(1j. %F{blue}%jj%f.)%(?.. %F{red}%?%f)' '${VIRTUAL_ENV:+ ("$( basename "${VIRTUAL_ENV}" )")}
 %# '
-RPROMPT=$(kube_ps1)
 }
+# RPROMPT=$(kube_ps1)
 
 # Aliases
 alias grep='grep --color=auto'
@@ -136,22 +141,46 @@ if [[ -d /usr/share/fzf/shell ]]; then  # fedora
   source /usr/share/fzf/shell/key-bindings.zsh
 fi
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 unset BREW_PREFIX USR_SHARE
 
 # https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Accessing-On_002dLine-Help
 unalias run-help   # alias to man
 autoload run-help  # also helps with builtins
 
+autoload -Uz compinit
+compinit
+
 # This way the completion script does not have to parse Bazel's options
 # repeatedly.  The directory in cache-path must be created manually.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
+fpath[1,0]=~/.zsh/completion/
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# pnpm
+export PNPM_HOME="/Users/lepistone/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+nvm-load() {
+  if type nvm >/dev/null 2>&1; then
+    print "nvm already loaded. bailing out"
+    return 0
+  fi
+  . /opt/homebrew/opt/nvm/nvm.sh
+  . /opt/homebrew/opt/nvm/etc/bash_completion.d/nvm
+  print "nvm loaded."
+}
+
+sdk-load() {
+  if type sdk >/dev/null 2>&1; then
+    print "sdkman already loaded. bailing out"
+    return 0
+  fi
+  . "$HOME/.sdkman/bin/sdkman-init.sh"
+  print "sdkman loaded"
+}
+
+# zprof
